@@ -1,0 +1,14 @@
+@mixin col {
+    position: relative;
+    width: 100%;
+    padding: {
+        left: $grid-gutter-width;
+        right: $grid-gutter-width;
+    }
+}
+@mixin row-cols($count) {
+    > * {
+        flex: 0 0 auto;
+        width: 100% / $count;
+    }
+}

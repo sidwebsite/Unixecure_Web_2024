@@ -1,0 +1,185 @@
+.card {
+    display: block;
+    background-color: rgba($white, 0.8);
+    text-decoration: none;
+    transition: var(--base-transition);
+    backdrop-filter: blur(30px);
+    .card-body {
+        padding: 24px;
+    }
+    .card-title {
+        color: var(--primary);
+        margin-bottom: 8px;
+        transition: .3s ease;
+    }
+    .card-logo {
+        list-style: none;
+        > li {
+            width: 59px;
+            &:not(:last-child) {
+                margin-right: 12px;
+            }
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .card-text {
+        color: var(--gray-400);
+        margin-bottom: 8px;
+    }
+    .card-date {
+        display: block;
+        color: var(--gray-400);
+        margin-bottom: 8px;
+    }
+    .card-class {
+        display: flex;
+        align-items: center;
+        > span {
+            display: inline-block;
+            background-color: var(--primary-600);
+            color: var(--white);
+            font-size: toRem(12px);
+            padding: 4px;
+            margin-right: 8px;
+        }
+        > .card-group {
+            list-style: none;
+            > li {
+                background-color: var(--gray-100);
+                color: var(--primary-600);
+                display: inline-block;
+                font-size: toRem(12px);
+                padding: 4px;
+                &:not(:last-child) {
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+    .card-group {
+        list-style: none;
+        > li {
+            background-color: var(--gray-100);
+            color: var(--primary-600);
+            display: inline-block;
+            font-size: toRem(12px);
+            padding: 4px;
+            &:not(:last-child) {
+                margin-right: 8px;
+            }
+        }
+    }
+    .card-footer {
+        transition: var(--base-transition);
+        background-color: var(--primary);
+        color: var(--white);
+        text-align: center;
+        font-weight: bolder;
+        font-size: toRem(16px);
+        padding: {
+            top: 8px;
+            bottom: 8px;
+        };
+    }
+    &:hover {
+        background-color: rgba($white, 0.9);
+        .card-title {
+            color: var(--btn-hover);
+        }
+        .card-footer {
+            background-color: var(--btn-hover);
+        }
+    }
+}
+.strip-card {
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+    .card-img {
+        height: 100%;
+        overflow: hidden;
+        position: relative;
+        > .bg-img {
+            @include media-breakpoint-up(md) {
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+            }
+            transform: scale(1);
+            transform-origin: center;
+            transition: .3s ease;
+        }
+    }
+    &:hover {
+        .card-img > .bg-img {
+            transform: scale(1.1);
+        }
+    }
+}
+.default-card {
+    @include media-breakpoint-up(md) {
+        height: 100%;
+    }
+    .card-img {
+        width: 100%;
+        overflow: hidden;
+        height: 0;
+        padding-bottom: 56.6%;
+        img {
+            width: 100%;
+            transform: scale(1);
+            transition: var(--base-transition);
+        }
+    }
+    &:hover {
+        .card-img img {
+            transform: scale(1.1);
+            transition: var(--base-transition);
+        }
+    }
+}
+.statements-card {
+    @include media-breakpoint-up(md) {
+        height: 100%;
+    }
+    text-align: center;
+    position: relative;
+    background-color: var(--transparent);
+    height: 100%;
+    &::after {
+        content: "";
+        width: 100%;
+        height: 80%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: -1;
+        background-color: rgba($white, 0.8);
+        transition: var(--base-transition);
+    }
+    .card-img {
+        position: relative;
+        width: 212px;
+        margin: {
+            left: auto;
+            right: auto;
+        };
+        img {
+            width: 100%;
+            box-shadow: none;
+            transition: var(--base-transition);
+        }
+    }
+    &:hover {
+        background-color: var(--transparent);
+        &::after {
+            background-color: rgba($white, 0.9);
+        }
+        .card-img img {
+            box-shadow: 0px 0px 8px 0px rgba($primary, 0.25);
+        }
+    }
+}

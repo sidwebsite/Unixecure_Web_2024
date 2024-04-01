@@ -1,0 +1,107 @@
+.footer-contact {
+    background-color: var(--primary-600);
+    @include media-breakpoint-up(md) {
+        background-image: url('../images/footer-contact-bg1.svg'), url('../images/footer-contact-bg2.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position: -400px center, -400px center;
+    }
+    @include media-breakpoint-up(lg) {
+        background-image: url('../images/footer-contact-bg1.svg'), url('../images/footer-contact-bg2.svg'), url('../images/footer-contact-bg3.svg');
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: -360px center, -360px center, 100% center;
+        background-size: contain;
+    }
+    // background-position: -560px center, -560px center;
+    background-size: cover;
+    overflow: hidden;
+
+}
+.footer-contact-container {
+    max-width: map-get($container-max-widths, md);
+    @include make-container();
+    padding: {
+        top: 100px;
+        bottom: 100px;
+    };
+    text-align: center;
+    color: var(--white);
+    h1, p {
+        padding-bottom: 40px;
+    }
+    p {
+        line-height: 1.5;
+    }
+}
+.footer-Introduction {
+    padding: {
+        top: 100px;
+        bottom: 100px;
+    };
+    a {
+        color: var(--gray-800);
+        transition: .3s ease;
+        text-decoration: none;
+        &:hover {
+            color: var(--secondary);
+        }
+    }
+}
+.footer-Introduction-icon-group {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 32px;
+    > li > a {
+        width: 36px;
+        height: 34px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+.footer-navbar-title {
+    color: var(--primary-300);
+    margin-bottom: 16px;
+    @include media-breakpoint-up(sm) {
+        text-align: left;
+    }
+    text-align: center;
+}
+.footer-navbar-link-group {
+    @include media-breakpoint-up(sm) {
+        text-align: left;
+    }
+    text-align: center;
+    a {
+        @include media-breakpoint-up(sm) {
+            display: block;
+            &:not(:last-child) {
+                margin-bottom: 16px;
+            }
+        }
+        display: inline-block;
+        margin-bottom: 16px;
+        &:not(:last-child) {
+            margin-right: 16px;
+        }
+    }
+    &.information-security {
+        > div:first-child {
+            @include media-breakpoint-up(sm) {
+                margin-right: 33px;
+            }
+        }
+
+    }
+}
+.footer-sgs {
+    @include media-breakpoint-up(lg) {
+        margin: {
+            top: 16px;
+            bottom: 16px;
+        };
+    }
+    margin: {
+        top: 32px;
+        bottom: 32px;
+    };
+}

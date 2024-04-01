@@ -1,0 +1,21 @@
+.share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    > button {
+        border: 0;
+        background-color: var(--transparent);
+        outline: none;
+        box-shadow: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 34px;
+        height: 36px;
+        font-size: toRem(16px);
+        transition: var(--base-transition);
+        &:hover {
+            color: var(--secondary);
+        }
+    }
+}

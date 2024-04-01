@@ -1,0 +1,23 @@
+// @mixin container {
+//     margin: {
+//         left: auto;
+//         right: auto;
+//     };
+//     padding: {
+//         left: $grid-gutter-width;
+//         right: $grid-gutter-width;
+//     };
+//     position: relative;
+//     z-index: 1;
+// }
+@function breakpoint-infix($name, $breakpoints: $grid-breakpoints) {
+    @return if(breakpoint-min($name, $breakpoints) == null, "", "-#{$name}");
+}
+@mixin make-container($gutter: $container-padding-x) {
+    --gutter-x: #{$gutter};
+    width: 100%;
+    padding-right: calc(var(--gutter-x) / 2);
+    padding-left: calc(var(--gutter-x) / 2);
+    margin-right: auto;
+    margin-left: auto;
+}

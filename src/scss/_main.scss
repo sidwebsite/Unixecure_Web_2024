@@ -1,0 +1,15 @@
+@import 'header';
+@import 'navbar';
+@import 'breadcrumb';
+@import 'card';
+@import 'news';
+@import 'pagination';
+@import 'share';
+@import 'footer';
+@import 'gotop';
+.warpper {
+    max-height: 100vh;
+}
+.main {
+    padding-top: $header-height;
+}

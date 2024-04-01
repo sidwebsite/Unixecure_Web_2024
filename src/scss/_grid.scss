@@ -1,0 +1,100 @@
+
+.row {
+    --gutter-x: #{$grid-gutter-width};
+    --grid-column: #{$grid-columns};
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: calc(var(--gutter-x)* -0.5);
+    margin-right: calc(var(--gutter-x)* -0.5);
+    & > * {
+        padding: {
+            left: calc(var(--gutter-x)* 0.5);
+            right: calc(var(--gutter-x)* 0.5);
+        };
+        flex-shrink: 0;
+        width: 100%;
+        max-width: 100%;
+    }
+    & > col, & > [class^="col-"] {
+        padding: {
+            left: calc(var(--gutter-x)* 0.5);
+            right: calc(var(--gutter-x)* 0.5);
+        };
+    }
+}
+
+// col
+@each $key, $value in $grid-breakpoints {
+    @if not $value {
+        @for $var from 1 through $grid-columns {
+            .col-#{$var} {
+                max-width: calc(100% * ($var / var(--grid-column)));
+                flex: 0 0 calc(100% * ($var / var(--grid-column)));
+            }
+        }
+        .col {
+            flex: 1 0 0%;
+        }
+        .col-auto {
+            flex: 0 0 auto;
+            width: auto;
+        }
+    } @else {
+        @media screen and (min-width: $value) {
+            @for $var from 1 through $grid-columns {
+                .col-#{$key}-#{$var} {
+                    max-width: calc(100% * ($var / var(--grid-column)));
+                    flex: 0 0 calc(100% * ($var / var(--grid-column)));
+                }
+            }
+            .col-#{$key} {
+                flex: 1 0 0%;
+            }
+            .col-#{$key}-auto {
+                flex: 0 0 auto;
+                width: auto;
+            }
+        }
+    }
+}
+// row cols
+.row-cols-3 {
+    > * {
+        flex: 0 0 auto;
+        width: calc(100% / 3);
+    }
+}
+// no-gutters
+.no-gutters {
+    --gutter-x: 0;
+	margin-left: var(--gutter-x);
+	margin-right: var(--gutter-x);	
+	> [class*='col-'] {
+		padding-left: var(--gutter-x);
+		padding-right: var(--gutter-x);
+	}
+}
+
+// grid 
+.grid {
+    display: grid;
+	grid-template-columns: repeat($grid-columns, 1fr);
+    gap: 10px;
+}
+@each $key, $value in $grid-breakpoints {
+    @if not $value {
+        @for $var from 1 through $grid-columns {
+            .g-#{$var} {
+                grid-column: auto/span $var;
+            }
+        }
+    } @else {
+        @media screen and (min-width: $value) {
+            @for $var from 1 through $grid-columns {
+                .g-#{$key}-#{$var} {
+                    grid-column: auto/span $var;
+                }
+            }
+        }
+    }
+}

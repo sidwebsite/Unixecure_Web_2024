@@ -1,0 +1,15 @@
+.border-bottom {
+    border-bottom: 1px solid var(--gray-200);
+}
+.rounded-0 {
+    border-radius: 0 !important;
+}
+.rounded-1 {
+    border-radius: 10px !important;
+}
+.border {
+	border: $border-width solid var(--block);
+}
+.border-0 {
+    border: 0 !important;
+}

@@ -1,3 +1,28 @@
-* {
-    box-sizing: border-box;
-}
+@import url(https://kit.fontawesome.com/fb083deec1.css);
+// nice-select
+@import "~nice-select2/src/scss/nice-select2.scss";
+// main
+@import 'variables';
+@import 'functions';
+@import 'mixin';
+@import 'utilities';
+@import 'root';
+@import 'reboot';
+@import 'containers';
+@import 'grid';
+@import 'colors';
+@import 'mixin/gradient';
+@import 'spacie';
+@import 'links';
+@import 'lists';
+@import 'images';
+@import 'ratios';
+@import 'limitLines';
+@import 'headings';
+@import 'background';
+@import 'borders';
+@import 'form';
+@import 'button';
+@import 'utilities/api';
+@import 'modal';
+@import 'main';

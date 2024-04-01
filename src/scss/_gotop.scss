@@ -1,0 +1,35 @@
+.gotop {
+	position: fixed;
+	bottom: 45px;
+	right: -50px;
+	color: var(--primary);
+	background-color: rgba($white, 0.8);
+    box-shadow: none;
+	display: block;
+	z-index: 100;
+	width: 50px;
+	height: 50px;
+    border-radius: 50%;
+    opacity: 1;
+    font-size: toRem(20px);
+    transition: var(--base-transition);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover {
+        opacity: 1;
+        box-shadow: 0px 10px 20px 0px rgba($gray-800, 0.1);
+        background-color: var(--white);
+    }
+    &.show {
+        right: 15px;
+        opacity: 1;
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+}
+
+@keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+}  

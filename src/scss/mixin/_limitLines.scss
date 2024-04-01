@@ -1,0 +1,7 @@
+@mixin limitLines($line:2) {
+    display: -webkit-box;            
+    -webkit-box-orient: vertical;  
+    overflow: hidden;    
+    text-align: justify;
+    -webkit-line-clamp: $line;
+}

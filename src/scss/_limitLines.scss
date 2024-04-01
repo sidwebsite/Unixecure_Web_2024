@@ -1,0 +1,6 @@
+.limitLines-2 {
+    @include limitLines();
+}
+.limitLines-3 {
+    @include limitLines(3);
+}

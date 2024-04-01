@@ -1,0 +1,49 @@
+@each $name, $color in $theme-colors {
+    // text color
+    .text-#{$name} {
+        color: var(--#{$name}) !important;
+    }    
+    // background color
+    .bg-#{$name} {
+        background-color: var(--#{$name});
+        color: var(--white);
+        @if $name == 'white' {
+            color: var(--gray);
+        }
+    }
+    .bg-transparent {
+        background-color: var(--transparent) !important;
+    }
+    // link color
+    // .link-#{$name} {
+    //     color:  var(--#{$name}) !important;
+    //     &:hover, &:focus {
+    //         color: darken($color, 10%) !important;
+    //         text-decoration: underline;
+    //     }
+    //     @if $name == 'white' {
+    //         &:hover, &:focus {
+    //             color: var(--darkcyan) !important;
+    //         }
+    //     }
+    // }
+    // border color
+    .border-#{$name} {
+        border-color: var(--#{$name}) !important;
+    }
+}
+// primary
+@each $name, $color in $colors  {
+    .text-#{$name} {
+        color: var(--#{$name}) !important;
+    }
+    .bg-#{$name} {
+        background-color: var(--#{$name}) !important;
+    }
+    .border-#{$name} {
+        border-color: var(--#{$name}) !important;
+    }
+}
+.text-alarm {
+    color: var(--alarm);
+}

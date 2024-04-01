@@ -1,0 +1,21 @@
+@function tint-color($color, $percentage) {
+    @return mix($white, $color, $percentage * $theme-color-interval);
+}
+@function shade-color($color, $percentage) {
+    @return mix($block, $color, $percentage * $theme-color-interval);
+}
+// px to rem
+@function toRem($size) {
+    @return calc($size / $base-font-size) * 1rem;
+}
+// breakpoints
+// min width
+@function breakpoint-min($name, $breakpoints: $grid-breakpoints) {
+    $min: map-get($breakpoints, $name);
+    @return if($min != 0, $min, null);
+}
+// max width
+@function breakpoint-max($name, $breakpoints: $grid-breakpoints) {
+    $max: map-get($breakpoints, $name);
+    @return if($max and $max > 0, $max + 1, null);
+}

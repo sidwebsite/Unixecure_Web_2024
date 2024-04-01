@@ -1,0 +1,25 @@
+:root {
+    @each $name, $color in $theme-colors {
+        --#{$name}: #{$color};
+    }
+    // primary
+    @each $name, $color in $colors {
+        --#{$name}: #{$color};
+    }
+    --base-transition: #{$base-transition};
+    --base-box-shadow: #{$base-box-shadow};
+    --base-btn-box-shadow: #{$base-btn-box-shadow};
+    --breadcrumb-divider: #{$breadcrumb-divider};
+    --line-height-base: #{$line-height-base};
+    --transparent: #{$transparent};
+    // font weight
+    @each $name, $weigh in $fontWeighs {
+        --#{$name}: #{$weigh};
+    }
+    // --list-link-url: #{$list-link-url};
+    // --list-link-url-hover: #{$list-link-url-hover};
+    --besa-border: 1px solid #{$gray-100};
+    --btn-color: #{$btn-color};
+    --btn-hover: #{$btn-hover};
+    --statements-bg: #{$statements-bg};
+}
