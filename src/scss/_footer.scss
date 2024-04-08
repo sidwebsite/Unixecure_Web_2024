@@ -1,3 +1,6 @@
+.footer {
+    background-color: var(--gray-50);
+}
 .footer-contact {
     background-color: var(--primary-600);
     @include media-breakpoint-up(md) {

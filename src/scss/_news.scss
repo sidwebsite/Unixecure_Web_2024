@@ -10,12 +10,20 @@
     padding-top: calc($header-height + 24px);
 }
 // backgronud image
+.container-fixed {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
 .cases-bg-rightTo, .cases-bg-rightBotton, .cases-bg-left, .news-bg, .events-bg-left, .events-bg-right, .statements-bg {
     position: absolute;
     z-index: -1;
 }
 .cases-bg-rightTo {
-    top: -240px;
+    top: -120px;
     right: -355px;
 }
 .cases-bg-rightBotton {
