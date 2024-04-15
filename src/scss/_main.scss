@@ -2,6 +2,7 @@
 @import 'navbar';
 @import 'breadcrumb';
 @import 'card';
+@import 'aboutUs';
 @import 'news';
 @import 'pagination';
 @import 'share';
@@ -12,4 +13,8 @@
 }
 .main {
     padding-top: $header-height;
+    padding-top: calc($header-height + 60px);
+    padding-bottom: 100px;
+    position: relative;
+    overflow: hidden;
 }

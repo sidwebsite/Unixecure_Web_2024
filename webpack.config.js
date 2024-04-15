@@ -82,7 +82,42 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        // 成功案例
+        // 關於我們：公司簡介
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/aboutUs_1.html',
+            filename: 'ch/aboutUs_1.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 關於我們：經營團隊
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/aboutUs_2.html',
+            filename: 'ch/aboutUs_2.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 關於我們：專業認證
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/aboutUs_3.html',
+            filename: 'ch/aboutUs_3.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 關於我們：營業據點
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/aboutUs_4.html',
+            filename: 'ch/aboutUs_4.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 關於我們：人才招募
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/aboutUs_5.html',
+            filename: 'ch/aboutUs_5.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 最新消息：成功案例
         new HtmlWebpackPlugin({
             template: './src/html/ch/cases_lists.html',
             filename: 'ch/cases_lists.html',
@@ -95,7 +130,7 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        // 新聞中心
+        // 最新消息：新聞中心
         new HtmlWebpackPlugin({
             template: './src/html/ch/news_lists.html',
             filename: 'ch/news_lists.html',
@@ -108,7 +143,7 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        // 影音專區
+        // 最新消息：影音專區
         new HtmlWebpackPlugin({
             template: './src/html/ch/video_list.html',
             filename: 'ch/video_list.html',
@@ -121,7 +156,7 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        // 行銷活動
+        // 最新消息：行銷活動
         new HtmlWebpackPlugin({
             template: './src/html/ch/events_lists.html',
             filename: 'ch/events_lists.html',
@@ -134,7 +169,7 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        // 報告書專區
+        // 最新消息：報告書專區
         new HtmlWebpackPlugin({
             template: './src/html/ch/statements_lists.html',
             filename: 'ch/statements_lists.html',
