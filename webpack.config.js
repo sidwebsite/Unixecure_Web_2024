@@ -9,6 +9,8 @@ module.exports = {
     entry: {
         main: './src/js/main.js',
         selcets: './src/js/selcets.js',
+        index: './src/js/index.js',
+        aboutUs_recruit: './src/js/aboutUs_recruit.js',
         news: './src/js/news.js'
     },
     output: {
@@ -80,42 +82,42 @@ module.exports = {
             template: './src/html/index.html',
             filename: 'index.html',
             minify: false,
-            chunks: ['main']
+            chunks: ['main', 'index']
         }),
         // 關於我們：公司簡介
         new HtmlWebpackPlugin({
-            template: './src/html/ch/aboutUs_1.html',
-            filename: 'ch/aboutUs_1.html',
+            template: './src/html/ch/aboutUs_introduction.html',
+            filename: 'ch/aboutUs_introduction.html',
             minify: false,
             chunks: ['main']
         }),
         // 關於我們：經營團隊
         new HtmlWebpackPlugin({
-            template: './src/html/ch/aboutUs_2.html',
-            filename: 'ch/aboutUs_2.html',
+            template: './src/html/ch/aboutUs_team.html',
+            filename: 'ch/aboutUs_team.html',
             minify: false,
             chunks: ['main']
         }),
         // 關於我們：專業認證
         new HtmlWebpackPlugin({
-            template: './src/html/ch/aboutUs_3.html',
-            filename: 'ch/aboutUs_3.html',
+            template: './src/html/ch/aboutUs_authentication.html',
+            filename: 'ch/aboutUs_authentication.html',
             minify: false,
             chunks: ['main']
         }),
         // 關於我們：營業據點
         new HtmlWebpackPlugin({
-            template: './src/html/ch/aboutUs_4.html',
-            filename: 'ch/aboutUs_4.html',
+            template: './src/html/ch/aboutUs_map.html',
+            filename: 'ch/aboutUs_map.html',
             minify: false,
             chunks: ['main']
         }),
         // 關於我們：人才招募
         new HtmlWebpackPlugin({
-            template: './src/html/ch/aboutUs_5.html',
-            filename: 'ch/aboutUs_5.html',
+            template: './src/html/ch/aboutUs_recruit.html',
+            filename: 'ch/aboutUs_recruit.html',
             minify: false,
-            chunks: ['main']
+            chunks: ['main', 'aboutUs_recruit']
         }),
         // 最新消息：成功案例
         new HtmlWebpackPlugin({

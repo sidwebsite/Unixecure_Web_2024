@@ -26,6 +26,8 @@
     "webpack-dev-server": "^5.0.4"
   },
   "dependencies": {
-    "nice-select2": "^2.1.0"
+    "aos": "^3.0.0-beta.6",
+    "nice-select2": "^2.1.0",
+    "swiper": "^11.1.1"
   }
 }

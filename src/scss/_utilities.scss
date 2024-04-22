@@ -80,7 +80,9 @@ $utilities:	(
 	"max-width": (
 		property: max-width,
 		class: mw,
-		values: (100: 100%)
+		values: (
+			100: 100%
+		)
     ),
 	"height": (
 		responsive: true,
@@ -123,13 +125,7 @@ $utilities:	(
 	"font-weight": (
 		property: font-weight,
 		class: fw,
-		values: (
-			light: $font-weight-light,
-			lighter: $font-weight-lighter,
-			normal: $font-weight-normal,
-			bold: $font-weight-bold,
-			bolder: $font-weight-bolder
-		)
+		values: $fontWeighs
     ),
 	"line-height": (
 		property: line-height,
@@ -158,6 +154,16 @@ $utilities:	(
 		property: position,
 		class: position,
 		values: static relative absolute fixed sticky
+	),
+	"z-index-": (
+		property: z-index,
+		class: z-index,
+		values: (
+			1: 1,
+			2: 2,
+			3: 3,
+			-1: -1
+		)
 	)
 ) !default;
 // 
@@ -176,15 +182,24 @@ $utilities:	(
 .overflow-hidden {
 	overflow: hidden;
 }
+.overflow-y-hidden {
+	overflow-y: hidden;
+}
 @include media-breakpoint-down(sm) {
 	.rotate-sm-90 {
 		transform: rotate(90deg);
 	}
 }
-.max-w-760 {
+.mw-760 {
 	max-width: 760px;
+	--gutter-x: 1.5rem;
+    width: 100%;
+    padding-right: calc(var(--gutter-x) / 2);
+    padding-left: calc(var(--gutter-x) / 2);
+    margin-right: auto;
+    margin-left: auto;
 }
-.max-w-380 {
+.mw-380 {
 	max-width: 380px;
 }
 .text-decoration-none {

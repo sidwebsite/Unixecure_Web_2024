@@ -5,3 +5,19 @@
         color: var(--gray-900);
     }
 }
+.body-links {
+    color: var(--primary);
+    font-weight: var(--bolder);
+    display: inline-block;
+    margin-bottom: 8px;
+    position: relative;
+    word-break: break-all;
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: var(--base-transition);
+    &:hover {
+        color: var(--btn-hover) !important;
+        text-underline-offset: 7px;
+        transition: var(--base-transition);
+    }
+}

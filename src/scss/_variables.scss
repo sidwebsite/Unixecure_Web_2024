@@ -133,16 +133,16 @@ $grid-breakpoints: (
 );
 $spacies: (
 	0: 0,
-	1: $size-base * .25,
-	2: $size-base * .5,
-	3: $size-base,
-	4: $size-base * 1.5,
-	5: $size-base * 2,
-	6: $size-base * 2.5,
-	7: $size-base * 3.75,
-	8: $size-base * 5,
-	9: $size-base * 6.25,
-	10: $size-base * 7.5,
+	1: $size-base * .25, // 4px
+	2: $size-base * .5, // 8px
+	3: $size-base,       // 16px
+	4: $size-base * 1.5, // 24px
+	5: $size-base * 2,     // 32px
+	6: $size-base * 2.5,   // 40px
+	7: $size-base * 3.125, // 50px
+	8: $size-base * 5,      // 80px
+	9: $size-base * 6.25,   // 100px
+	10: $size-base * 7.5,   //120px
 	auto: auto,
 );
 $property: 'm', 'p';
@@ -199,3 +199,36 @@ $aboutUs-color-purple: #CC348C;
 $aboutUs-color-green: #00A43A;
 $aboutUs-color-orange: #EE7900;
 $aboutUs-color-cyan: #5DACE0;
+// 
+$spacer: $grid-gutter-width !default;
+$gutters: (
+	0: 0,
+	1: $spacer * .25,
+	2: $spacer * .5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+);
+// index serve text color
+$index-serve-sesc: #296FA2;
+$index-serve-heis: #00736B;
+$index-serve-soc: #225DAB;
+$index-serve-srmas: $aboutUs-color-dark-purple;
+$index-serve-lucas: $aboutUs-color-green;
+$index-serve-sivas: $aboutUs-color-orange;
+$index-serve-ssc: $aboutUs-color-cyan;
+$index-serve-edr: $aboutUs-color-purple;
+$index-serve-isms: $gray-700;
+
+$index-serve-colors: (
+	sesc: $index-serve-sesc,
+	heis: $index-serve-heis,
+	soc: $index-serve-soc,
+	srmas: $index-serve-srmas,
+	lucas: $index-serve-lucas,
+	sivas: $index-serve-sivas,
+	ssc: $index-serve-ssc,
+	edr: $index-serve-edr,
+	isms: $index-serve-isms
+);
+

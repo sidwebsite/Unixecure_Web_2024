@@ -22,4 +22,8 @@
     --btn-color: #{$btn-color};
     --btn-hover: #{$btn-hover};
     --statements-bg: #{$statements-bg};
+    // index serve color 
+    @each $name, $color in $index-serve-colors {
+        --#{$name}: #{$color};
+    }
 }

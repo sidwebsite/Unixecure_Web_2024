@@ -27,6 +27,7 @@ button {
     }
 }
 .btn-secondary {
+    display: inline-block;
     background-color: var(--white);
     border: 1px solid var(--white);
     color: var(--btn-color);
