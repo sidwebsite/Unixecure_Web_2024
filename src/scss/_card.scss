@@ -1,6 +1,7 @@
 .card {
     display: block;
     background-color: rgba($white, 0.8);
+    box-shadow: none;
     text-decoration: none;
     transition: var(--base-transition);
     backdrop-filter: blur(30px);
@@ -85,6 +86,7 @@
     }
     &:hover {
         background-color: rgba($white, 0.9);
+        box-shadow: var(--base-box-shadow);
         .card-title {
             color: var(--btn-hover);
         }

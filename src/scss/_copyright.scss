@@ -1,0 +1,30 @@
+// .copyright-bg {
+//     background-image: url('../images/copyright/copyright_left.svg'), url('../images/copyright/copyright_right.svg');
+//     background-repeat: no-repeat;
+//     background-position: -300px 0, 0 120px;
+// }
+.copyright_left {
+    top: -190px;
+    left: -490px;
+    z-index: -1;
+}
+.copyright_right {
+    top: 320px;
+    right: -430px;
+    z-index: -1;
+}
+.copyright-title {
+    font-size: toRem(50px);
+    margin-bottom: 60px;
+}
+.copyright-body {
+    h3{
+        margin-bottom: map-get($spacies, 5);
+    }
+    p {
+        font-size: toRem(16px);
+        &:not(:last-child) {
+            margin-bottom: map-get($spacies, 5);
+        }
+    }
+}

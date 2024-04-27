@@ -26,6 +26,7 @@
 .form-label {
     display: block;    
     margin-bottom: 0.5rem;
+    font-size: toRem(16px);
     // font-weight: 600;
     color: var(--gray-800);
     span {
@@ -56,29 +57,24 @@
     appearance: none;
     transition: var(--base-transition);
     // color-adjust: exact;
-    &[type="checkbox"] {
-        position: relative;
-        &::after {
-            width: 20px;
-            height: 20px;
-            content: "";
-            color: var(--white);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
+    position: relative;
+    &::after {
+        width: 20px;
+        height: 20px;
+        content: "";
+        color: var(--white);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     &:checked {
         background-color: var(--primary-300);
         border-color: var(--primary-300);
         transition: var(--base-transition);
-        &[type="checkbox"] {
-            position: relative;
-            &::after {
-                font-family: "Font Awesome 6 Sharp";
-                font-weight: 900;
-                content: "\f00c";
-            }
+        &::after {
+            font-family: "Font Awesome 6 Sharp";
+            font-weight: 900;
+            content: "\f00c";
         }
         & ~ .form-check-label {
             color: var(--primary-300);

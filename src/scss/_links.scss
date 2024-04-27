@@ -5,6 +5,14 @@
         color: var(--gray-900);
     }
 }
+.links-primary {
+    text-decoration: none;
+    color: var(--primary);
+    transition: var(--base-transition);
+    &:hover {
+        color: var(--btn-hover);
+    }
+}
 .body-links {
     color: var(--primary);
     font-weight: var(--bolder);

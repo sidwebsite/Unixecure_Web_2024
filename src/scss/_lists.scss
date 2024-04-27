@@ -21,10 +21,10 @@
 }
 .list-style-type-custom-circle {
     list-style: none;
-    padding-left: 0;
+    padding-left: 3px;
     li {
         position: relative;
-        padding-left: 18px;
+        padding-left: 16px;
         line-height: 1.5;
         &::before {
             content: "";

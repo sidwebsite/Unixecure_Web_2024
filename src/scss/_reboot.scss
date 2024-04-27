@@ -32,8 +32,11 @@ body {
     font-size: toRem(14px);
 }
 p, ul li, ol li {
-    line-height: 24px;
+    line-height: 28px;
 }
 section {
     position: relative;
+}
+a {
+    display: inline-block;
 }

@@ -104,7 +104,6 @@ $colors: (
 ) !default;	
 // size
 $base-font-size: 16px;
-$size-base: 1rem;
 // grid
 $grid-columns: 12!default;
 $grid-gutter-width: 1.5rem !default;;
@@ -131,32 +130,33 @@ $grid-breakpoints: (
 	xxl: 1440px,
 	xxxl: 1600px
 );
+$spacer: 1rem;
 $spacies: (
 	0: 0,
-	1: $size-base * .25, // 4px
-	2: $size-base * .5, // 8px
-	3: $size-base,       // 16px
-	4: $size-base * 1.5, // 24px
-	5: $size-base * 2,     // 32px
-	6: $size-base * 2.5,   // 40px
-	7: $size-base * 3.125, // 50px
-	8: $size-base * 5,      // 80px
-	9: $size-base * 6.25,   // 100px
-	10: $size-base * 7.5,   //120px
+	1: $spacer * .25, // 4px
+	2: $spacer * .5, // 8px
+	3: $spacer,       // 16px
+	4: $spacer * 1.5, // 24px
+	5: $spacer * 2,     // 32px
+	6: $spacer * 2.5,   // 40px
+	7: $spacer * 3.125, // 50px
+	8: $spacer * 5,      // 80px
+	9: $spacer * 6.25,   // 100px
+	10: $spacer * 7.5,   //120px
 	auto: auto,
 );
 $property: 'm', 'p';
 $sides: '', 't', 'b', 'l', 'r', 'x', 'y';
 
 $base-transition: .3s ease;
-$base-box-shadow: 0px 4px 15px rgba(#3c49ba, 0.1);
+$base-box-shadow: 0px 4px 15px 0px rgba(#3c49ba, 0.1);
 $base-btn-box-shadow: 0px 4px 23px rgba($primary, 0.3);
 // font weight
 $font-weight-lighter: lighter;
 $font-weight-light: 300;
 $font-weight-normal: 400;
 $font-weight-bold: bold;
-$font-weight-bolder: bolder;
+$font-weight-bolder: 600;
 $fontWeighs: (
 	lighter: $font-weight-lighter,
 	light: $font-weight-light,
@@ -164,14 +164,14 @@ $fontWeighs: (
 	bold: $font-weight-bold,
 	bolder: $font-weight-bolder,
 );
-// 
+// line height
 $line-height-base: 1.75;
 $line-height-sm: 1.25;
 $line-height-lg: 2;
 
 $breadcrumb-divider: quote("/");
 // border
-$border-width: 1px;
+$border-width: 1px !default;
 $border-widths: (
 	1: 1px,
 	2: 2px,
@@ -193,6 +193,12 @@ $aspect-ratios: (
 	"16x9": calc(9 / 16 * 100%),
 	"21x9": calc(9 / 21 * 100%)
 );
+// position values
+$position-values: (
+	0: 0,
+	50: 50%,
+	100: 100%
+);
 $statements-bg: #F5F6FC;
 $aboutUs-color-dark-purple: #833B7F;
 $aboutUs-color-purple: #CC348C;
@@ -200,7 +206,6 @@ $aboutUs-color-green: #00A43A;
 $aboutUs-color-orange: #EE7900;
 $aboutUs-color-cyan: #5DACE0;
 // 
-$spacer: $grid-gutter-width !default;
 $gutters: (
 	0: 0,
 	1: $spacer * .25,
@@ -232,3 +237,5 @@ $index-serve-colors: (
 	isms: $index-serve-isms
 );
 
+// serve background images
+$serve-bg-images: ('moc','heis','sivas','srmas','lucas','sesc','soc','appCheck','cse','codeDetect','gcb');

@@ -41,6 +41,7 @@ button {
 }
 .btn-contact {
     display: inline-block;
+    
     color: var(--white) !important;
     background-color: var(--primary);
     font-size: toRem(20px);
@@ -55,6 +56,7 @@ button {
 }
 .btn-block-primary {
     color: var(--primary);
+    font-size: toRem(16px);
     transition: var(--base-transition);
     display: inline-block;
     position: relative;

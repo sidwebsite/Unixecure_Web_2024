@@ -1,0 +1,10 @@
+@mixin circle($size, $color, $blur, $opacity) {
+    content: "";
+    position: absolute;
+    background-color: #{$color};
+    width: $size;
+    height: $size;
+    border-radius: 50%;
+    filter: blur($blur);
+    opacity: $opacity;
+}

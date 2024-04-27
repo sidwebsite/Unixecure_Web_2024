@@ -119,6 +119,83 @@ module.exports = {
             minify: false,
             chunks: ['main', 'aboutUs_recruit']
         }),
+        // 資安法專區-moc
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_moc.html',
+            filename: 'ch/serve_moc.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-heis
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_heis.html',
+            filename: 'ch/serve_heis.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-sivas
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_sivas.html',
+            filename: 'ch/serve_sivas.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-srmas
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_srmas.html',
+            filename: 'ch/serve_srmas.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-lucas
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_lucas.html',
+            filename: 'ch/serve_lucas.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-sesc
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_sesc.html',
+            filename: 'ch/serve_sesc.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-soc
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_soc.html',
+            filename: 'ch/serve_soc.html',
+            minify: false,
+            chunks: ['main']
+        }),
+         // 資安法專區-APP檢測服務
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_appCheck.html',
+            filename: 'ch/serve_appCheck.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-資安健診服務
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_cse.html',
+            filename: 'ch/serve_cse.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-原始碼檢測
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_codeDetect.html',
+            filename: 'ch/serve_codeDetect.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 資安法專區-GCB 政府組態基準
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/serve_gcb.html',
+            filename: 'ch/serve_gcb.html',
+            minify: false,
+            chunks: ['main']
+        }),
         // 最新消息：成功案例
         new HtmlWebpackPlugin({
             template: './src/html/ch/cases_lists.html',
@@ -183,6 +260,20 @@ module.exports = {
             filename: 'ch/statements_content.html',
             minify: false,
             chunks: ['main', 'selcets']
+        }),
+        // 聯繫我們
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contact.html',
+            filename: 'ch/contact.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 著作權及隱私權聲明
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/copyright.html',
+            filename: 'ch/copyright.html',
+            minify: false,
+            chunks: ['main']
         }),
         // new CopyPlugin({
         //     patterns: [

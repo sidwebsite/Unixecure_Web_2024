@@ -1,25 +1,30 @@
 h1, .h1 {
     font-size: toRem(36px);
     line-height: toRem(48px);
-    font-weight: 700;
+    font-weight: var(--bolder);
 }
 h2, .h2 {
     font-size: toRem(30px);
     line-height: toRem(40px);
-    font-weight: 700;
+    font-weight: var(--bolder);
 }
 h3, .h3 {
     font-size: toRem(24px);
     line-height: toRem(36px);
-    font-weight: 700;
+    font-weight: var(--bolder);
 }
 h4, .h4 {
     font-size: toRem(20px);
     line-height: toRem(32px);
-    font-weight: 700;
+    font-weight: var(--bolder);
 }
 h5, .h5 {
     font-size: toRem(16px);
     line-height: toRem(28px);
-    font-weight: 700;
+    font-weight: var(--bolder);
+}
+h6, .h6 {
+    font-size: toRem(14px);
+    line-height: toRem(24px);
+    font-weight: var(--bolder);
 }

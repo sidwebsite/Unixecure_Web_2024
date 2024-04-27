@@ -10397,11 +10397,12 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".bannerSwiper", {
+    lazy: true,
     loop: true,
     spaceBetween: 0,
     centeredSlides: true,
     autoplay: {
-        delay: 5000,
+        delay: 8000,
         disableOnInteraction: false,
     }
 });
