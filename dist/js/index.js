@@ -10400,7 +10400,6 @@ var swiper = new swiper_bundle__WEBPACK_IMPORTED_MODULE_0__["default"](".bannerS
     lazy: true,
     loop: true,
     spaceBetween: 0,
-    centeredSlides: true,
     autoplay: {
         delay: 8000,
         disableOnInteraction: false,

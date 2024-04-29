@@ -40,8 +40,13 @@ tabsNav.forEach((btn, index) => {
 import Swiper from "swiper/bundle";
 
 var swiper = new Swiper(".albumSwiper", {
+    lazy: true,
     loop:true,
-    slidesPerView: 'auto',
+    slidesPerView: 1.3,
     spaceBetween: 30,
-    centeredSlides: true
+    centeredSlides: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    }
 });

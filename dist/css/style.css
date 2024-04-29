@@ -12098,6 +12098,26 @@ button {
   }
 }
 
+.recruit-boon-right {
+  right: -332px;
+  top: -195px;
+}
+
+.recruit-boon-left {
+  left: -197px;
+  bottom: -96px;
+}
+
+.recruit-images-right {
+  right: -230px;
+  bottom: -12px;
+}
+
+.recruit-process-left {
+  left: -492px;
+  top: -86px;
+}
+
 .tabs .tabs-nav {
   width: 100%;
   list-style: none;
