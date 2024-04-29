@@ -6,5 +6,8 @@
 .contact-title {
     color: var(--white);
     font-size: toRem(50px);
-    margin-bottom: 60px;
+    padding: {
+        top: 60px;
+        bottom: 60px;
+    };
 }

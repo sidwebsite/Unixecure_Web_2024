@@ -15,7 +15,10 @@
 }
 .copyright-title {
     font-size: toRem(50px);
-    margin-bottom: 60px;
+    padding: {
+        top: 60px;
+        bottom: 60px;
+    };
 }
 .copyright-body {
     h3{

@@ -11702,13 +11702,15 @@ button {
 .aboutUs_bg {
   position: absolute;
   z-index: -1;
-  top: -1100px;
+  top: -1030px;
   left: -485px;
 }
 
 .aboutUs-title {
   color: var(--white);
-  margin-bottom: 50px;
+  font-size: 3.125rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .introduction-shadow {
@@ -12677,6 +12679,73 @@ button {
   border-bottom: 1px solid var(--gray-200);
 }
 
+.main-represen {
+  padding-top: 60px;
+  position: relative;
+  overflow: hidden;
+}
+
+.represent_bg {
+  top: -625px;
+  left: -330px;
+}
+
+.represent-index-title {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.represent-index-title > h1 {
+  font-size: 3.125rem;
+  line-height: 70px;
+}
+.represent-index-title > p {
+  font-size: 1.25rem;
+  line-height: 32px;
+}
+
+.represent-index-card > .represent-index-img {
+  width: 160px;
+  -webkit-transform: scale(1);
+      -ms-transform: scale(1);
+          transform: scale(1);
+  -webkit-transform-origin: center;
+      -ms-transform-origin: center;
+          transform-origin: center;
+  -webkit-transition: var(--base-transition);
+  transition: var(--base-transition);
+}
+.represent-index-card:hover > .represent-index-img {
+  width: 160px;
+  -webkit-transform: scale(1.1);
+      -ms-transform: scale(1.1);
+          transform: scale(1.1);
+  -webkit-transition: var(--base-transition);
+  transition: var(--base-transition);
+}
+
+.represent-filter-nav > button {
+  width: 240px;
+  -webkit-transition: var(--base-transition);
+  transition: var(--base-transition);
+  background-color: var(--transparent);
+}
+.represent-filter-nav > button.active, .represent-filter-nav > button:hover {
+  background-color: var(--primary-50);
+}
+
+.represent-lists-card {
+  display: block;
+  text-decoration: none;
+}
+.represent-lists-card > h5 {
+  color: var(--primary);
+  -webkit-transition: var(--base-transition);
+  transition: var(--base-transition);
+}
+.represent-lists-card:hover > h5 {
+  color: var(--btn-hover) !important;
+}
+
 .news-main, .news-content-main {
   position: relative;
   overflow: hidden;
@@ -12781,7 +12850,8 @@ button {
 
 .news-title {
   font-size: 3.125rem;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .select-group {
@@ -13076,7 +13146,8 @@ h4.cases-title {
 .contact-title {
   color: var(--white);
   font-size: 3.125rem;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .copyright_left {
@@ -13093,7 +13164,8 @@ h4.cases-title {
 
 .copyright-title {
   font-size: 3.125rem;
-  margin-bottom: 60px;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .copyright-body h3 {
@@ -13417,7 +13489,7 @@ h4.cases-title {
 }
 
 .main {
-  padding-top: 120px;
+  padding-top: 60px;
   position: relative;
   overflow: hidden;
 }
@@ -13432,6 +13504,12 @@ h4.cases-title {
 
 .hr {
   border-top: 1px solid var(--gray-200);
+}
+
+.page-title {
+  font-size: 3.125rem;
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 /*# sourceMappingURL=style.css.map*/

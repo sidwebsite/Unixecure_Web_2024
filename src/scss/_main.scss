@@ -6,6 +6,7 @@
 @import 'index';
 @import 'aboutUs';
 @import 'serve';
+@import 'represent';
 @import 'news';
 @import 'contact';
 @import 'copyright';
@@ -20,7 +21,7 @@
     padding: 50px 0;
 }
 .main {
-    padding-top: calc($header-height + 60px);
+    padding-top: $header-height;
     position: relative;
     overflow: hidden;
 }
@@ -33,4 +34,11 @@
 }
 .hr {
     border-top: 1px solid var(--gray-200);
+}
+.page-title {
+    font-size: toRem(50px);
+    padding: {
+        top: 60px;
+        bottom: 60px;
+    };
 }

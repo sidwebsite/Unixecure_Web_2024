@@ -11,6 +11,7 @@ module.exports = {
         selcets: './src/js/selcets.js',
         index: './src/js/index.js',
         aboutUs_recruit: './src/js/aboutUs_recruit.js',
+        represent_lists: './src/js/represent_lists.js',
         news: './src/js/news.js'
     },
     output: {
@@ -195,6 +196,34 @@ module.exports = {
             filename: 'ch/serve_gcb.html',
             minify: false,
             chunks: ['main']
+        }),
+        // 共同供應契約
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/joint_supply_contract.html',
+            filename: 'ch/joint_supply_contract.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-首頁
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_index.html',
+            filename: 'ch/represent_index.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-rapid7
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_rapid7_lists.html',
+            filename: 'ch/represent_rapid7_lists.html',
+            minify: false,
+            chunks: ['main', 'represent_lists']
+        }),
+        // 代理商品-entrust
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_entrust_lists.html',
+            filename: 'ch/represent_entrust_lists.html',
+            minify: false,
+            chunks: ['main', 'represent_lists']
         }),
         // 最新消息：成功案例
         new HtmlWebpackPlugin({

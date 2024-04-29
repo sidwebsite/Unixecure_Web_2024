@@ -1,0 +1,61 @@
+.main-represen {
+    padding-top: $header-height;
+    position: relative;
+    overflow: hidden;
+}
+.represent_bg {
+    top: -625px;
+    left: -330px;
+}
+.represent-index-title {
+    padding: {
+        top: 60px;
+        bottom: 60px;
+    };
+    > h1 {
+        font-size: toRem(50px);
+        line-height: 70px;
+    }
+    > p {
+        font-size: toRem(20px);
+        line-height: 32px;
+    }
+}
+.represent-index-card {
+    > .represent-index-img {
+        width: 160px;
+        transform: scale(1);
+        transform-origin: center;
+        transition: var(--base-transition);
+    }
+    &:hover {
+        > .represent-index-img {
+            width: 160px;
+            transform: scale(1.1);
+            transition: var(--base-transition);
+        }
+    }
+}
+.represent-filter-nav {
+    > button {
+        width: 240px;
+        transition: var(--base-transition);
+        background-color: var(--transparent);
+        &.active, &:hover {
+            background-color: var(--primary-50);
+        }
+    }
+}
+.represent-lists-card {
+    display: block;
+    text-decoration: none;
+    > h5 {
+        color: var(--primary);
+        transition: var(--base-transition);
+    }
+    &:hover {
+        > h5 {
+            color: var(--btn-hover) !important;
+        }
+    }
+}
