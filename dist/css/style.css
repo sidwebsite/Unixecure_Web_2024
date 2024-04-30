@@ -7901,6 +7901,7 @@ a {
 .figure .figure-caption {
   color: var(--gray-600);
   font-size: 0.875rem;
+  padding-top: 8px;
   text-align: center;
 }
 

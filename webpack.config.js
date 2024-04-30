@@ -211,17 +211,79 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        // 代理商品-rapid7
+        // 代理商品-rapid7 列表頁
         new HtmlWebpackPlugin({
             template: './src/html/ch/represent_rapid7_lists.html',
             filename: 'ch/represent_rapid7_lists.html',
             minify: false,
             chunks: ['main', 'represent_lists']
         }),
-        // 代理商品-entrust
+        // 代理商品-rapid7 內容頁
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_rapid7_content_1.html',
+            filename: 'ch/represent_rapid7_content_1.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_rapid7_content_2.html',
+            filename: 'ch/represent_rapid7_content_2.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_rapid7_content_3.html',
+            filename: 'ch/represent_rapid7_content_3.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_rapid7_content_4.html',
+            filename: 'ch/represent_rapid7_content_4.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_rapid7_content_5.html',
+            filename: 'ch/represent_rapid7_content_5.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_rapid7_content_6.html',
+            filename: 'ch/represent_rapid7_content_6.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-entrust 列表頁
         new HtmlWebpackPlugin({
             template: './src/html/ch/represent_entrust_lists.html',
             filename: 'ch/represent_entrust_lists.html',
+            minify: false,
+            chunks: ['main', 'represent_lists']
+        }),
+        // 代理商品-entrust 內容頁
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_entrust_content_1.html',
+            filename: 'ch/represent_entrust_content_1.html',
+            minify: false,
+            chunks: ['main', 'represent_lists']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_entrust_content_2.html',
+            filename: 'ch/represent_entrust_content_2.html',
+            minify: false,
+            chunks: ['main', 'represent_lists']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_entrust_content_3.html',
+            filename: 'ch/represent_entrust_content_3.html',
+            minify: false,
+            chunks: ['main', 'represent_lists']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_entrust_content_4.html',
+            filename: 'ch/represent_entrust_content_4.html',
             minify: false,
             chunks: ['main', 'represent_lists']
         }),
