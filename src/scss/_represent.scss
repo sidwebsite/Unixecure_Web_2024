@@ -59,3 +59,23 @@
         }
     }
 }
+.represent-solution {
+    .item {
+        padding: 20px;
+        &:not(:last-child) {
+            margin-bottom: 20px;
+        }
+    }
+    .icon {
+        font-size: toRem(32px);
+        i {
+            transform: rotate(90deg);
+        }
+        @include media-breakpoint-up(md) {
+            i {
+                transform: rotate(0deg);
+            }
+        }
+    }
+    
+}

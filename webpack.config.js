@@ -267,25 +267,95 @@ module.exports = {
             template: './src/html/ch/represent_entrust_content_1.html',
             filename: 'ch/represent_entrust_content_1.html',
             minify: false,
-            chunks: ['main', 'represent_lists']
+            chunks: ['main']
         }),
         new HtmlWebpackPlugin({
             template: './src/html/ch/represent_entrust_content_2.html',
             filename: 'ch/represent_entrust_content_2.html',
             minify: false,
-            chunks: ['main', 'represent_lists']
+            chunks: ['main']
         }),
         new HtmlWebpackPlugin({
             template: './src/html/ch/represent_entrust_content_3.html',
             filename: 'ch/represent_entrust_content_3.html',
             minify: false,
-            chunks: ['main', 'represent_lists']
+            chunks: ['main']
         }),
         new HtmlWebpackPlugin({
             template: './src/html/ch/represent_entrust_content_4.html',
             filename: 'ch/represent_entrust_content_4.html',
             minify: false,
-            chunks: ['main', 'represent_lists']
+            chunks: ['main']
+        }),
+        // 代理商品-cellopoint
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_cellopoint.html',
+            filename: 'ch/represent_cellopoint.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-delinea
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_delinea.html',
+            filename: 'ch/represent_delinea.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-eLock
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_eLock.html',
+            filename: 'ch/represent_eLock.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-illumio
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_illumio.html',
+            filename: 'ch/represent_illumio.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-invicti
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_invicti.html',
+            filename: 'ch/represent_invicti.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-neithnet
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_neithnet.html',
+            filename: 'ch/represent_neithnet.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-opswat
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_opswat.html',
+            filename: 'ch/represent_opswat.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-securityScorecard
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_securityScorecard.html',
+            filename: 'ch/represent_securityScorecard.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-skyhigh
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_skyhigh.html',
+            filename: 'ch/represent_skyhigh.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        // 代理商品-tufin
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_tufin.html',
+            filename: 'ch/represent_tufin.html',
+            minify: false,
+            chunks: ['main']
         }),
         // 最新消息：成功案例
         new HtmlWebpackPlugin({

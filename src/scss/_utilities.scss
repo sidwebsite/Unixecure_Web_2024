@@ -245,7 +245,7 @@ $utilities: (
     }
 }
 .mw-760 {
-    max-width: 760px;
+    max-width: calc(760px + $container-padding-x);
     --gutter-x: 1.5rem;
     width: 100%;
     padding-right: calc(var(--gutter-x) / 2);
