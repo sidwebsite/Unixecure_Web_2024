@@ -1,0 +1,27 @@
+.joint_supply_contract_bg {
+    background-image: url('../images/joint_supply_contract/joint_supply_contract_bg.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.joint_supply_contract_table {
+    > .tr {
+        display: grid;
+        grid-template-columns: 160px 1fr;
+        row-gap: 16px;
+        > .th, > .td {
+            font-weight: var(--bolder);
+            line-height: 28px;
+            padding: 4px;
+        }
+        > .th {
+            color: var(--primary);
+            text-align: center;
+        }
+        > .td {
+            font-size: toRem(16px);
+        }
+        &:not(:last-child) {
+            border-bottom: 1px solid var(--white);
+        }
+    }
+}

@@ -12769,6 +12769,41 @@ button {
   }
 }
 
+.show {
+  display: block;
+}
+
+.hide {
+  display: none;
+}
+
+.joint_supply_contract_bg {
+  background-image: url(../images/joint_supply_contract/joint_supply_contract_bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.joint_supply_contract_table > .tr {
+  display: grid;
+  grid-template-columns: 160px 1fr;
+  row-gap: 16px;
+}
+.joint_supply_contract_table > .tr > .th, .joint_supply_contract_table > .tr > .td {
+  font-weight: var(--bolder);
+  line-height: 28px;
+  padding: 4px;
+}
+.joint_supply_contract_table > .tr > .th {
+  color: var(--primary);
+  text-align: center;
+}
+.joint_supply_contract_table > .tr > .td {
+  font-size: 1rem;
+}
+.joint_supply_contract_table > .tr:not(:last-child) {
+  border-bottom: 1px solid var(--white);
+}
+
 .news-main, .news-content-main {
   position: relative;
   overflow: hidden;

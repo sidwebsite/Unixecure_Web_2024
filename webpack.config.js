@@ -176,6 +176,13 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
+        // 資安法專區-APP檢測服務 英文版
+        new HtmlWebpackPlugin({
+            template: './src/html/en/serve_appCheck_en.html',
+            filename: 'en/serve_appCheck_en.html',
+            minify: false,
+            chunks: ['main']
+        }),
         // 資安法專區-資安健診服務
         new HtmlWebpackPlugin({
             template: './src/html/ch/serve_cse.html',
