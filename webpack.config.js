@@ -12,7 +12,8 @@ module.exports = {
         index: './src/js/index.js',
         aboutUs_recruit: './src/js/aboutUs_recruit.js',
         represent_lists: './src/js/represent_lists.js',
-        news: './src/js/news.js'
+        news: './src/js/news.js',
+        sticky: './src/js/sticky.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -375,7 +376,7 @@ module.exports = {
             template: './src/html/ch/cases_content.html',
             filename: 'ch/cases_content.html',
             minify: false,
-            chunks: ['main']
+            chunks: ['main', 'sticky']
         }),
         // 最新消息：新聞中心
         new HtmlWebpackPlugin({
@@ -388,7 +389,7 @@ module.exports = {
             template: './src/html/ch/news_content.html',
             filename: 'ch/news_content.html',
             minify: false,
-            chunks: ['main']
+            chunks: ['main', 'sticky']
         }),
         // 最新消息：影音專區
         new HtmlWebpackPlugin({
@@ -401,7 +402,7 @@ module.exports = {
             template: './src/html/ch/video_content.html',
             filename: 'ch/video_content.html',
             minify: false,
-            chunks: ['main']
+            chunks: ['main', 'sticky']
         }),
         // 最新消息：行銷活動
         new HtmlWebpackPlugin({
@@ -414,7 +415,7 @@ module.exports = {
             template: './src/html/ch/events_content.html',
             filename: 'ch/events_content.html',
             minify: false,
-            chunks: ['main']
+            chunks: ['main', 'sticky']
         }),
         // 最新消息：報告書專區
         new HtmlWebpackPlugin({
@@ -427,7 +428,7 @@ module.exports = {
             template: './src/html/ch/statements_content.html',
             filename: 'ch/statements_content.html',
             minify: false,
-            chunks: ['main', 'selcets']
+            chunks: ['main', 'sticky']
         }),
         // 聯繫我們
         new HtmlWebpackPlugin({

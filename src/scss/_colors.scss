@@ -11,9 +11,6 @@
             color: var(--gray);
         }
     }
-    .bg-transparent {
-        background-color: var(--transparent) !important;
-    }
     // link color
     // .link-#{$name} {
     //     color:  var(--#{$name}) !important;
@@ -31,6 +28,9 @@
     .border-#{$name} {
         border-color: var(--#{$name}) !important;
     }
+}
+.bg-transparent {
+    background-color: var(--transparent) !important;
 }
 // primary
 @each $name, $color in $colors  {

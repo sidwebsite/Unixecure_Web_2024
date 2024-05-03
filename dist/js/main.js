@@ -62,6 +62,26 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _scss_style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ../scss/style.scss */ "./src/scss/style.scss");
 
+// cookies
+const cookiesBox = document.querySelector('.cookies-box'),
+acceptBtn = document.querySelector(".consentButton"),
+rejectBtn = document.querySelector(".rejectButton"); 
+
+acceptBtn.addEventListener('click', () => {
+    document.cookie = "CookieBy=GeeksForGeeks; max-age="+ 60 * 60 * 24; 
+    if(document.cookie) {
+        cookiesBox.classList.add('d-none');
+    } else {
+        alert('無法設定cookie！ 請從您瀏覽器的 cookie 設定中取消封鎖該網站。');
+    }
+});
+rejectBtn.addEventListener('click', () => {
+    alert('Cookie 被拒絕。某些功能可能會受到限制。');
+    cookiesBox.classList.add('d-none');
+});
+
+let checkCookie = document.cookie.indexOf("CookieBy=GeeksForGeeks"); 
+checkCookie !== -1 ? cookiesBox.classList.add('d-none') : cookiesBox.classList.remove('d-none');
 // navbar
 const bars = document.querySelector('#menu-bars');
 const barsIcon = bars.querySelector('i');

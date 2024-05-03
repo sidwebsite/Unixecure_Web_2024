@@ -1,10 +1,11 @@
 .card {
     display: block;
     background-color: rgba($white, 0.8);
+    border: 1px solid var(--white);
     box-shadow: none;
     text-decoration: none;
     transition: var(--base-transition);
-    backdrop-filter: blur(30px);
+    // backdrop-filter: blur(30px);
     .card-body {
         padding: 24px;
     }
@@ -44,6 +45,7 @@
             font-size: toRem(12px);
             padding: 4px;
             margin-right: 8px;
+            line-height: 18px;
         }
         > .card-group {
             list-style: none;
@@ -52,6 +54,7 @@
                 color: var(--primary-600);
                 display: inline-block;
                 font-size: toRem(12px);
+                line-height: 18px;
                 padding: 4px;
                 &:not(:last-child) {
                     margin-right: 8px;
@@ -66,6 +69,7 @@
             color: var(--primary-600);
             display: inline-block;
             font-size: toRem(12px);
+            line-height: 18px;
             padding: 4px;
             &:not(:last-child) {
                 margin-right: 8px;

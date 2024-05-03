@@ -64,7 +64,7 @@
                         <li><a href="ch/contact.html" title="聯繫我們">聯繫我們</a></li>
                     </ul>
                     <ul>
-                        <li><a href="#" title=""><i class="fa-sharp fa-solid fa-right-to-bracket"></i></a></li>
+                        <!-- <li><a href="#" title=""><i class="fa-sharp fa-solid fa-right-to-bracket"></i></a></li> -->
                         <li class="d-none">
                             <a href="#" id="member-nav" title="會員專區" class="text-primary">會員專區 <i class="fa-solid fa-user"></i></a>
                             <!-- <ul id="member-dropdown" class="dropdown-menu">
@@ -89,10 +89,14 @@
             </header>
             <!-- header end -->
             <!-- main start -->
-            <main class="index-main">
+            <main class="main">
                 <!-- cookies start -->
-                <section class="bg-primary-50 d-none">
-                    <div class="text-lg-center cookies">當您使用本網站即表示您同意 Cookies 技術支援，以提供您更佳的使用體驗。更多資訊請參閱<a href="#" class="body-links" title="隱私權聲明">隱私權聲明</a>。<button type="button" class="btn btn-secondary">同意 Cookies</button></div>
+                <section class="bg-primary-50 cookies-box d-flex align-items-center justify-content-lg-center">
+                    <p>當您使用本網站即表示您同意 Cookies 技術支援，以提供您更佳的使用體驗。更多資訊請參閱<a href="#" class="body-links" title="隱私權聲明">隱私權聲明</a>。</p>
+                    <div class="ml-3">
+                        <button type="button" class="btn btn-secondary mr-3 consentButton">同意 Cookies</button>
+                        <button type="button" class="btn fs-5 bg-transparent rejectButton"><i class="fa-solid fa-xmark"></i></button>
+                    </div>
                 </section>
                 <!-- cookies end -->
                 <!-- banner start -->
@@ -149,7 +153,7 @@
                     </div>
                 </section>
                 <!-- banner end -->
-                <section class="py-9 overflow-x-hidden">
+                <section class="py-9 overflow-x-hidden bg-gray-50">
                     <!-- background images start -->
                     <div class="container-absolute z-index-1 d-none d-lg-block">
                         <div class="container h-100 position-relative">
@@ -171,22 +175,22 @@
                                 </article>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row counting">
                             <div class="col-md-4">
                                 <div class="text-center mb-4 mb-md-0">
-                                    <span class="index-number d-block mb-3 fw-bolder">30+</span>
+                                    <span class="index-number d-block mb-3 fw-bolder"><span class="animate-number" data-target="30">0</span>+</span>
                                     <span class="d-block fw-bolder fs-6">家自有/代理資安工具</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="text-center mb-4 mb-md-0">
-                                    <span class="index-number d-block mb-3 fw-bolder">7x24</span>
+                                    <span class="index-number d-block mb-3 fw-bolder"><span class="animate-number" data-target="7">0</span>x<span class="animate-number" data-target="24">0</span></span>
                                     <span class="d-block fw-bolder fs-6">小時全天候資安監控</span>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <div class="text-center mb-0">
-                                    <span class="index-number d-block mb-3 fw-bolder">91%</span>
+                                    <span class="index-number d-block mb-3 fw-bolder"><span class="animate-number" data-target="91">0</span>%</span>
                                     <span class="d-block fw-bolder fs-6">資安監控續約率</span>
                                 </div>
                             </div>
@@ -276,7 +280,7 @@
                 <!-- 多項國際認證，值得信賴 -->
                 <section class="py-9 overflow-hidden">
                     <!-- background images start -->
-                    <div class="container-absolute bg-primary-50">
+                    <div class="container-absolute position-fixed bg-primary-50">
                         <div class="container h-100 position-relative">
                             <span class="index-serve-hexagon-leftBottom position-absolute">
                                 <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODQ0IiBoZWlnaHQ9Ijk1OCIgdmlld0JveD0iMCAwIDg0NCA5NTgiIGZpbGw9Im5vbmUiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxnIG9wYWNpdHk9IjAuMTYiIGZpbHRlcj0idXJsKCNmaWx0ZXIwX2ZfODc2NV8xMTA0MzApIj4KPHBhdGggZD0iTTQyMiA1MEw3OTMuNTI1IDI2NC41VjY5My41TDQyMiA5MDhMNTAuNDc1MSA2OTMuNVYyNjQuNUw0MjIgNTBaIiBmaWxsPSJ1cmwoI3BhaW50MF9saW5lYXJfODc2NV8xMTA0MzApIi8+CjwvZz4KPGRlZnM+CjxmaWx0ZXIgaWQ9ImZpbHRlcjBfZl84NzY1XzExMDQzMCIgeD0iMC40NzUwOTgiIHk9IjAiIHdpZHRoPSI4NDMuMDUiIGhlaWdodD0iOTU4IiBmaWx0ZXJVbml0cz0idXNlclNwYWNlT25Vc2UiIGNvbG9yLWludGVycG9sYXRpb24tZmlsdGVycz0ic1JHQiI+CjxmZUZsb29kIGZsb29kLW9wYWNpdHk9IjAiIHJlc3VsdD0iQmFja2dyb3VuZEltYWdlRml4Ii8+CjxmZUJsZW5kIG1vZGU9Im5vcm1hbCIgaW49IlNvdXJjZUdyYXBoaWMiIGluMj0iQmFja2dyb3VuZEltYWdlRml4IiByZXN1bHQ9InNoYXBlIi8+CjxmZUdhdXNzaWFuQmx1ciBzdGREZXZpYXRpb249IjI1IiByZXN1bHQ9ImVmZmVjdDFfZm9yZWdyb3VuZEJsdXJfODc2NV8xMTA0MzAiLz4KPC9maWx0ZXI+CjxsaW5lYXJHcmFkaWVudCBpZD0icGFpbnQwX2xpbmVhcl84NzY1XzExMDQzMCIgeDE9IjQ3NC4wMTgiIHkxPSIyODMuNjciIHgyPSI2ODUuOTU0IiB5Mj0iODY0Ljc3NiIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPgo8c3RvcCBzdG9wLWNvbG9yPSIjM0M0OUJBIi8+CjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iI0RCNDg4OSIvPgo8L2xpbmVhckdyYWRpZW50Pgo8L2RlZnM+Cjwvc3ZnPgo=" alt="">
@@ -395,7 +399,7 @@
                 <!-- 全域聯防終極指南 -->
                 <section class="pt-9 overflow-hidden">
                     <!-- background images start -->
-                    <div class="container-absolute">
+                    <div class="container-absolute bg-white">
                         <div class="container h-100 position-relative">
                             <span class="index-statements-bg position-absolute">
                                 <img src="images/index/index-statements_bg.svg" alt="">
@@ -448,7 +452,7 @@
                     </div>
                 </section>
                 <!-- 相關新聞 -->
-                <section class="pt-7 pb-9">
+                <section class="pt-7 pb-9 bg-gray-50">
                     <div class="mw-760">
                         <div class="row">
                             <div class="col-12">

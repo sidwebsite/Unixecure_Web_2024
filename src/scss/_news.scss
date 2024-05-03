@@ -141,9 +141,9 @@
 }
 // news-content
 .news-content-block {
-    // background-color: rgba($white, 0.5);
-    // border: 1px solid var(--white);
-    backdrop-filter: blur(30px);
+    background-color: rgba($white, 0.5);
+    border: 1px solid var(--white);
+    // backdrop-filter: blur(30px);
     font-size: toRem(16px);
     .news-body {
         p {
@@ -233,6 +233,7 @@
             text-decoration: none;
             background-color: var(--gray-100);
             color: var(--primary-600);
+            line-height: 24px;
             padding: 4px 8px;
             margin-bottom: 0;
         }
@@ -243,6 +244,7 @@
     display: inline-block;
     background-color: var(--primary-600);
     color: var(--white);
+    line-height: 24px;
     padding: 4px 8px;
     margin-right: 4px;
 }

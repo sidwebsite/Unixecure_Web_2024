@@ -50,3 +50,16 @@ var swiper = new Swiper(".albumSwiper", {
         disableOnInteraction: false,
     }
 });
+// parallax scrolling
+const recruitBoonRight = document.querySelector('.recruit-boon-right'),
+recruitBoonLeft = document.querySelector('.recruit-boon-left'),
+recruitImagesRight = document.querySelector('.recruit-images-right'),
+recruitProcessLeft = document.querySelector('.recruit-process-left');
+const parallax = () => {
+    let value = window.scrollY;
+    recruitBoonRight.style.top = `${(value * 0.5) - 195}px`;
+    recruitBoonLeft.style.bottom = `-${(value * 0.3) + 96}px`;
+    recruitImagesRight.style.top = `${(value * 0.5) - 203}px`;
+    recruitProcessLeft.style.top = `${(value * 0.3) - 86}px`;
+};
+window.addEventListener('scroll', parallax);
