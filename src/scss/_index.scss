@@ -11,9 +11,12 @@
     overflow: hidden;
     position: relative;
     height: 400px;
+    display: flex;
+    justify-content: flex-end;
     img {
         width: auto;
         height: 400px;
+        margin-right: auto;
     }
     @include media-breakpoint-up(md) {
         height: auto;
@@ -27,10 +30,16 @@
         position: absolute;
         background-image: url('../images/index/banner-left.svg');
         background-repeat: no-repeat;
-        left: -940px;
+        background-size: cover;
+        left: -1040px;
         top: -367px;
         width: 1583px;
         height: 1063px;
+        
+        @include media-breakpoint-up(xs) {
+            left: -1240px;
+            top: -567px;
+        }
         @include media-breakpoint-up(md) {
             width: 2161px;
             height: 1451px;
@@ -45,6 +54,7 @@
         }
     }
     &::after {
+        display: none;
         content: "";
         position: absolute;
         background-image: url('../images/index/banner-right.svg');
@@ -59,12 +69,15 @@
         @include media-breakpoint-up(xl) {
             right: -187px;
         }
+        @include media-breakpoint-up(lg) {
+            display: block;
+        }
     }
 }
 .swiper-slide {
     .banner-item-body {
-        margin-left: 15px;
-        margin-right: 15px;
+        margin-left: 24px;
+        margin-right: 24px;
         opacity: 0;
         transform: translateY(-5%) scale(0);
         transition: 1s ease;
@@ -72,8 +85,8 @@
             color: var(--white);
         }
         h1 {
-            font-size: toRem(50px);
-            line-height: 70px;
+            font-size: toRem(36px);
+            line-height: 48px;
         }
         p {
             width: 100%;
@@ -83,8 +96,14 @@
                 width: 360px;
             }
         }
-        @include media-breakpoint-up(xl) {
-            margin-left: 11%;
+        @include media-breakpoint-up(md) {
+            margin-left: 60px;
+        }
+        @include media-breakpoint-up(lg) {
+            h1 {
+                font-size: toRem(50px);
+                line-height: 70px;
+            }
         }
     }
 }
@@ -120,6 +139,7 @@
         }
     }
     .item {
+        display: block;
         text-decoration: none;
         box-shadow: 0px 4px 15px 0px rgba($white, 0.1);
         transition: var(--base-transition);
@@ -129,6 +149,7 @@
     }
 }
 .index-serve-moc {
+    display: block;
     position: relative;
     @include media-breakpoint-up(lg) {
         margin-top: 64px;

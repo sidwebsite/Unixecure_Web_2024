@@ -21,7 +21,10 @@
     .container,
     // 100% wide container at all breakpoints
     .container-fluid {
-        @include make-container();
+        @include make-container($gutter:3rem);
+        @include media-breakpoint-up(xs) {
+            @include make-container($gutter:5rem);
+        }
     }
 
     // Responsive containers that are 100% wide until a breakpoint
