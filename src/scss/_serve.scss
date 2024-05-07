@@ -10,6 +10,7 @@
 }
 @each $name in $serve-bg-images {
     .serve-#{$name}-bg {
+        background-color: var(--gray-50);
         background-image: url('../images/serve/servr_#{$name}_bg.svg');
     }
 }
@@ -42,6 +43,7 @@
     }
 }
 .serve-hexagon-bg {
+    background-color: var(--gray-50);
     background-image: url('../images/serve/serve_hexagon_bg.svg');
     background-position: center;
     background-repeat: no-repeat;
@@ -83,11 +85,11 @@
 }
 .serve-video {
     position: relative;
+    background-color: var(--gray-50);
     &::after, &::before {
         content: "";
         background-repeat: no-repeat;
         background-size: cover;
-        z-index: -1;
     }
     &::after {
         --top: -382px;

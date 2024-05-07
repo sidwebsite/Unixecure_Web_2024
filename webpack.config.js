@@ -444,11 +444,11 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        // new CopyPlugin({
-        //     patterns: [
-        //         { from: "./src/images", to: "images" },
-        //     ],
-        // })
+        new CopyPlugin({
+            patterns: [
+                { from: "./src/file", to: "file" },
+            ],
+        })
     ],
     devServer: {
         host: 'localhost',
