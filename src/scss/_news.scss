@@ -229,10 +229,11 @@
         display: inline-block;
         a {
             display: block;
-            font-weight: 400;
+            font-weight: var(--bolder);
             text-decoration: none;
-            background-color: var(--gray-100);
+            background-color: rgba($gray-100, 0.5);
             color: var(--primary-600);
+            font-size: toRem(14px);
             line-height: 24px;
             padding: 4px 8px;
             margin-bottom: 0;
@@ -244,9 +245,11 @@
     display: inline-block;
     background-color: var(--primary-600);
     color: var(--white);
+    font-weight: var(--bolder);
     line-height: 24px;
     padding: 4px 8px;
     margin-right: 4px;
+    font-size: toRem(14px);
 }
 h4.cases-title {
     border-left: 8px solid var(--primary-600);
