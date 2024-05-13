@@ -447,6 +447,8 @@ module.exports = {
         new CopyPlugin({
             patterns: [
                 { from: "./src/file", to: "file" },
+                { from: "./src/images", to: "images" },
+                { from: "./src/jsons", to: "jsons" }
             ],
         })
     ],

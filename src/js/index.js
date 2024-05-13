@@ -1,3 +1,19 @@
+// vue
+let app = Vue.createApp({
+    data() {
+        return {
+            banner: '',
+        };
+    },
+    mounted() {
+        axios.get('../jsons/banner.json')
+        .then(response => (this.banner = response.data))
+        .catch(function(error) {
+            console.log(error);
+        });
+    }
+});
+app.mount("#app");
 // Swiper
 import Swiper from "swiper/bundle";
 
@@ -8,13 +24,13 @@ var swiper = new Swiper(".bannerSwiper", {
     autoplay: {
         delay: 8000,
         disableOnInteraction: false,
-    }
+    },
 });
 
 // counting
 let started = false;
 function countersFun() {
-    const counters = document.querySelectorAll('.animate-number');
+    const counters = document.querySelectorAll(".animate-number");
     let interval = 2000;
     counters.forEach((valueDisplay) => {
         let startValue = 0;
@@ -30,23 +46,23 @@ function countersFun() {
     });
 }
 // counting
-const counting = document.querySelector('.counting');
-window.addEventListener('scroll', () => {
+const counting = document.querySelector(".counting");
+window.addEventListener("scroll", () => {
     let winScrollY = window.scrollY;
-    let countingOffsetTop = counting.offsetTop
-    if(winScrollY >= countingOffsetTop) {
-        if(!started) {
+    let countingOffsetTop = counting.offsetTop;
+    if (winScrollY >= countingOffsetTop) {
+        if (!started) {
             countersFun();
         }
         started = true;
     }
 });
 // parallax scrolling
-const hexagonRight = document.querySelector('.hexagon-bg-right'),
-hexagonLeft = document.querySelector('.hexagon-bg-left');
+const hexagonRight = document.querySelector(".hexagon-bg-right"),
+    hexagonLeft = document.querySelector(".hexagon-bg-left");
 const parallax = () => {
     let value = window.scrollY;
-    hexagonRight.style.top = `${(value * 0.5) - 155}px`;
-    hexagonLeft.style.bottom = `-${(value * 0.5) + 145}px`;
+    hexagonRight.style.top = `${value * 0.5 - 155}px`;
+    hexagonLeft.style.bottom = `-${value * 0.5 + 145}px`;
 };
-window.addEventListener('scroll', parallax);
+window.addEventListener("scroll", parallax);
