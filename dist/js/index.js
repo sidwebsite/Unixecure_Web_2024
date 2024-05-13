@@ -10401,7 +10401,7 @@ let app = Vue.createApp({
         };
     },
     mounted() {
-        axios.get('../jsons/banner.json')
+        axios.get('jsons/banner.json')
         .then(response => (this.banner = response.data))
         .catch(function(error) {
             console.log(error);
