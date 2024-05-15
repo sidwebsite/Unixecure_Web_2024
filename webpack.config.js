@@ -441,6 +441,61 @@ module.exports = {
             minify: false,
             chunks: ['main', 'sticky']
         }),
+        // 最新消息：影音專區 內頁
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_1.html',
+            filename: 'ch/videos/video_page_1.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_2.html',
+            filename: 'ch/videos/video_page_2.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_3.html',
+            filename: 'ch/videos/video_page_3.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_4.html',
+            filename: 'ch/videos/video_page_4.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_5.html',
+            filename: 'ch/videos/video_page_5.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_6.html',
+            filename: 'ch/videos/video_page_6.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_7.html',
+            filename: 'ch/videos/video_page_7.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_8.html',
+            filename: 'ch/videos/video_page_8.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/videos/video_page_9.html',
+            filename: 'ch/videos/video_page_9.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
         // 最新消息：行銷活動
         new HtmlWebpackPlugin({
             template: './src/html/ch/events_lists.html',
@@ -481,6 +536,23 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
+        // 英文版
+        // 最新消息：影音專區 內頁
+        // new HtmlWebpackPlugin({
+        //     template: './src/html/en/videos/video_en_page_1.html',
+        //     filename: 'en/videos/video_en_page_1.html',
+        //     minify: false,
+        //     chunks: ['main', 'sticky']
+        // }),
+        // 日文版
+        // 最新消息：影音專區 內頁
+        // new HtmlWebpackPlugin({
+        //     template: './src/html/ja/videos/video_ja_page_1.html',
+        //     filename: 'ja/videos/video_ja_page_1.html',
+        //     minify: false,
+        //     chunks: ['main', 'sticky']
+        // }),
+        // CopyPlugin
         new CopyPlugin({
             patterns: [
                 { from: "./src/file", to: "file" }
