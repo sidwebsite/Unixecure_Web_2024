@@ -378,6 +378,43 @@ module.exports = {
             minify: false,
             chunks: ['main', 'sticky']
         }),
+        // // 最新消息：成功案例 內頁
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/cases/cases_page_1.html',
+            filename: 'ch/cases/cases_page_1.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/cases/cases_page_2.html',
+            filename: 'ch/cases/cases_page_2.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/cases/cases_page_3.html',
+            filename: 'ch/cases/cases_page_3.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/cases/cases_page_4.html',
+            filename: 'ch/cases/cases_page_4.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/cases/cases_page_5.html',
+            filename: 'ch/cases/cases_page_5.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/cases/cases_page_6.html',
+            filename: 'ch/cases/cases_page_6.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
         // 最新消息：新聞中心
         new HtmlWebpackPlugin({
             template: './src/html/ch/news_lists.html',
@@ -446,9 +483,7 @@ module.exports = {
         }),
         new CopyPlugin({
             patterns: [
-                { from: "./src/file", to: "file" },
-                { from: "./src/images", to: "images" },
-                { from: "./src/jsons", to: "jsons" }
+                { from: "./src/file", to: "file" }
             ],
         })
     ],

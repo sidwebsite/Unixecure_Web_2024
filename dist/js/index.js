@@ -10393,22 +10393,6 @@ var __webpack_exports__ = {};
   \*************************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var swiper_bundle__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! swiper/bundle */ "./node_modules/swiper/swiper-bundle.mjs");
-// vue
-let app = Vue.createApp({
-    data() {
-        return {
-            banner: '',
-        };
-    },
-    mounted() {
-        axios.get('jsons/banner.json')
-        .then(response => (this.banner = response.data))
-        .catch(function(error) {
-            console.log(error);
-        });
-    }
-});
-app.mount("#app");
 // Swiper
 
 

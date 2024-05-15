@@ -1,19 +1,3 @@
-// vue
-let app = Vue.createApp({
-    data() {
-        return {
-            banner: '',
-        };
-    },
-    mounted() {
-        axios.get('../jsons/banner.json')
-        .then(response => (this.banner = response.data))
-        .catch(function(error) {
-            console.log(error);
-        });
-    }
-});
-app.mount("#app");
 // Swiper
 import Swiper from "swiper/bundle";
 

@@ -145,40 +145,44 @@
     border: 1px solid var(--white);
     backdrop-filter: blur(60px);
     font-size: toRem(16px);
+    a {
+        color: var(--primary);
+        font-weight: var(--bolder);
+        display: inline-block;
+        line-height: 28px;
+        position: relative;
+        word-break: break-all;
+        text-decoration: underline;
+        text-underline-offset: 3px;
+        transition: var(--base-transition);
+        &:hover {
+            color: var(--btn-hover) !important;
+            text-underline-offset: 7px;
+            transition: var(--base-transition);
+        }
+    }
     .news-body {
+        ul {
+            padding-left: map-get($spacies , 4);
+            margin-bottom: map-get($spacies , 6);
+        }
         p {
-            margin-bottom: 40px;
+            margin-bottom: map-get($spacies , 6);
             text-align: justify;
         }
         .links-group {
             > li:not(:last-child) {
                 a {
-                    margin-bottom: 8px;
+                    margin-bottom: map-get($spacies , 2);
                 }
-            }
-        }
-        a {
-            color: var(--primary);
-            font-weight: var(--bolder);
-            display: inline-block;
-            line-height: 28px;
-            position: relative;
-            word-break: break-all;
-            text-decoration: underline;
-            text-underline-offset: 3px;
-            transition: var(--base-transition);
-            &:hover {
-                color: var(--btn-hover) !important;
-                text-underline-offset: 7px;
-                transition: var(--base-transition);
             }
         }
         .btn-contact:hover {
             color: var(--white) !important;
         }
         .news-list {
-            padding-left: 24px;
-            margin-bottom: 40px;
+            padding-left: map-get($spacies , 4);
+            margin-bottom: map-get($spacies , 6);
             > li {
                 line-height: 28px;
             }
