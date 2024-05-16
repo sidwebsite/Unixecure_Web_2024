@@ -3,8 +3,8 @@
     width: 100%;
     padding: 0.375rem 0.75rem;
     font-size: toRem(16px);
-    font-weight: 400;
-    line-height: 1.5;
+    // font-weight: 400;
+    line-height: toRem(28px);
     color: var(--gray-800);
     background-color: #fff;
     background-clip: padding-box;

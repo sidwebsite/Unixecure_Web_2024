@@ -13,7 +13,8 @@ module.exports = {
         aboutUs_recruit: './src/js/aboutUs_recruit.js',
         represent_lists: './src/js/represent_lists.js',
         news: './src/js/news.js',
-        sticky: './src/js/sticky.js'
+        sticky: './src/js/sticky.js',
+        pagination: './src/js/pagination.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist'),
@@ -428,6 +429,69 @@ module.exports = {
             minify: false,
             chunks: ['main', 'sticky']
         }),
+        // 最新消息：新聞中心 內頁 2022 年
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_1.html',
+            filename: 'ch/news/news_page_1.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_2.html',
+            filename: 'ch/news/news_page_2.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_3.html',
+            filename: 'ch/news/news_page_3.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_4.html',
+            filename: 'ch/news/news_page_4.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_5.html',
+            filename: 'ch/news/news_page_5.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        // 最新消息：新聞中心 內頁 2023 年
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_6.html',
+            filename: 'ch/news/news_page_6.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_7.html',
+            filename: 'ch/news/news_page_7.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_8.html',
+            filename: 'ch/news/news_page_8.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_9.html',
+            filename: 'ch/news/news_page_9.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_10.html',
+            filename: 'ch/news/news_page_10.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        // 最新消息：新聞中心 內頁 2024 年
         // 最新消息：影音專區
         new HtmlWebpackPlugin({
             template: './src/html/ch/video_list.html',

@@ -164,29 +164,41 @@
     .news-body {
         ul {
             padding-left: map-get($spacies , 4);
+        }
+        ol {
+            padding-left: 20px;
+        }
+        ul, ol {
             margin-bottom: map-get($spacies , 6);
+            > li {
+                line-height: 28px;
+            }
         }
         p {
             margin-bottom: map-get($spacies , 6);
             text-align: justify;
         }
         .links-group {
+            margin-bottom: 0;
             > li:not(:last-child) {
                 a {
                     margin-bottom: map-get($spacies , 2);
                 }
             }
         }
+        .figure {
+            margin-bottom: map-get($spacies , 6);
+        }
         .btn-contact:hover {
             color: var(--white) !important;
         }
-        .news-list {
-            padding-left: map-get($spacies , 4);
-            margin-bottom: map-get($spacies , 6);
-            > li {
-                line-height: 28px;
-            }
-        }
+        // .news-list {
+        //     padding-left: map-get($spacies , 4);
+        //     margin-bottom: map-get($spacies , 6);
+        //     > li {
+        //         line-height: 28px;
+        //     }
+        // }
     }
     .item-body {
         .icon {
@@ -231,9 +243,6 @@
 .cases-content-logo img {
     width: 111px;
 }
-.news-body {
-    margin-bottom: 100px;
-}
 .class-group {
     list-style: none;
     > li  {
@@ -249,7 +258,6 @@
             padding: 4px 8px;
             margin-bottom: 0;
         }
-        
     }
 }
 .profession {
@@ -283,11 +291,11 @@ h4.cases-title {
 }
 .news-float-card {
     position: absolute;
-    width: 270px;
+    width: 280px;
     background: linear-gradient(270deg, #171C46 -64.58%, #2B3586 -32.52%, #3C49BA 60.95%, #ABB1E4 187.5%);
     box-shadow: 0px 16px 40px 0px rgba(48, 58, 149, 0.30);
     color: var(--white);
-    right: -170px;
+    right: -175px;
     top: 113px;
     z-index: 2;
     a {
@@ -360,6 +368,9 @@ h4.cases-title {
             font-weight: var(--bolder);
         }
     }
+    .column-merge {
+        grid-column: 2 / span 3;
+    }
     @include media-breakpoint-up(md) {
         > .tr {
             display: grid;
@@ -367,5 +378,22 @@ h4.cases-title {
                 display: block;
             }
         }
+    }
+}
+.events-user-img {
+    width: 80px;
+    img {
+        width: 100%;
+    }
+}
+// video 
+.video-img {
+    position: relative;
+    img {
+        width: 110% !important;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%) !important;
     }
 }

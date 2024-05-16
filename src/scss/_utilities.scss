@@ -120,20 +120,20 @@ $utilities: (
             100: 1,
         ),
     ),
-    "font-size": (
-        property: font-size,
-        class: fs,
-        values: (
-            1: toRem(36px),
-            2: toRem(30px),
-            3: toRem(24px),
-            4: toRem(20px),
-            5: toRem(18px),
-            6: toRem(16px),
-            7: toRem(14px),
-            8: toRem(12px),
-        ),
-    ),
+    // "font-size": (
+    //     property: font-size,
+    //     class: fs,
+    //     values: (
+    //         1: toRem(36px),
+    //         2: toRem(30px),
+    //         3: toRem(24px),
+    //         4: toRem(20px),
+    //         5: toRem(18px),
+    //         6: toRem(16px),
+    //         7: toRem(14px),
+    //         8: toRem(12px)
+    //     ),
+    // ),
     "font-weight": (
         property: font-weight,
         class: fw,

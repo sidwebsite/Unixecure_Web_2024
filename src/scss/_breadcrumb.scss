@@ -2,7 +2,7 @@
     display: flex;
     flex-wrap: wrap;
     padding: 0 0;
-    margin-bottom: 1rem;
+    margin-bottom: toRem(18px);
     list-style: none;
     .breadcrumb-item {
         position: relative;

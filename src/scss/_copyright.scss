@@ -13,13 +13,13 @@
     right: -430px;
     z-index: -1;
 }
-.copyright-title {
-    font-size: toRem(50px);
-    padding: {
-        top: 60px;
-        bottom: 60px;
-    };
-}
+// .copyright-title {
+//     font-size: toRem(50px);
+//     padding: {
+//         top: 60px;
+//         bottom: 60px;
+//     };
+// }
 .copyright-body {
     h3{
         margin-bottom: map-get($spacies, 5);

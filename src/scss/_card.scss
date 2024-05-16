@@ -118,6 +118,11 @@
             transform: scale(1);
             transform-origin: center;
             transition: .3s ease;
+            > img {
+                position: relative;
+                top: 50%;
+                transform: translateY(-50%);
+            }
         }
     }
     &:hover {
