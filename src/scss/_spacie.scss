@@ -22,4 +22,13 @@
             }
         }
     }
-}  
+}
+.mx-xs-1_5 {
+    @include media-breakpoint-down(xs) {
+        margin: {
+            left: -1.5rem;
+            right: -1.5rem;
+        };
+    }
+    
+}

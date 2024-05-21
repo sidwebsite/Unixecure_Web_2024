@@ -1,13 +1,7 @@
-.news-main, .news-content-main  {
-    position: relative;
-    overflow: hidden;
-}
-.news-main {
-    padding-top: calc($header-height + 60px);
-    padding-bottom: 100px;
-}
-.news-content-main {
-    padding-top: calc($header-height + 24px);
+.news-container {
+    @include media-breakpoint-down(xs) {
+        --gutter-x: 0;
+    }
 }
 // backgronud image
 .container-fixed {
@@ -245,8 +239,11 @@
 }
 .class-group {
     list-style: none;
+    display: flex;
     > li  {
-        display: inline-block;
+        &:not(:last-child) {
+            margin-right: 4px;
+        }
         a {
             display: block;
             font-weight: var(--bolder);
@@ -384,16 +381,5 @@ h4.cases-title {
     width: 80px;
     img {
         width: 100%;
-    }
-}
-// video 
-.video-img {
-    position: relative;
-    img {
-        width: 110% !important;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%) !important;
     }
 }
