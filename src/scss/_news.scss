@@ -361,9 +361,12 @@ h4.cases-title {
             display: none;
         }
         margin-bottom: 16px;
-        > .td:not(:first-child) {
-            font-weight: var(--bolder);
+        > .td > p {
+            margin-bottom: 0;
         }
+        // > .td:not(:first-child) {
+        //     font-weight: var(--bolder);
+        // }
     }
     .column-merge {
         grid-column: 2 / span 3;

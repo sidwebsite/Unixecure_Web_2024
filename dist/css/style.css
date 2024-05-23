@@ -13289,8 +13289,8 @@ h4.cases-title {
   color: var(--primary-700);
   display: none;
 }
-.active-table > .tr > .td:not(:first-child) {
-  font-weight: var(--bolder);
+.active-table > .tr > .td > p {
+  margin-bottom: 0;
 }
 .active-table .column-merge {
   grid-column: 2/span 3;
