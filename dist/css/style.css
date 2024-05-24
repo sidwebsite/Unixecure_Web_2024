@@ -1434,6 +1434,11 @@ a {
   display: inline-block;
 }
 
+table {
+  caption-side: bottom;
+  border-collapse: collapse;
+}
+
 .container {
   max-width: 1000px;
 }
@@ -3191,6 +3196,10 @@ a {
 
 .text-alarm {
   color: var(--alarm);
+}
+
+.bg-gray-50-50 {
+  background-color: rgba(248, 248, 248, 0.5);
 }
 
 .bg-gray-100-50 {
@@ -8122,6 +8131,10 @@ h6, .h6 {
   border: 0 !important;
 }
 
+.border-bottom-0 {
+  border-bottom: 0 !important;
+}
+
 .fs-big {
   font-size: 3.125rem;
   line-height: 70px;
@@ -8434,13 +8447,27 @@ button {
           backdrop-filter: blur(60px);
 }
 
+.table {
+  width: 100%;
+}
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
   line-height: 1.5rem;
 }
 
+tbody, td, tfoot, th, thead, tr {
+  border-color: inherit;
+  border-style: solid;
+  border-width: 0;
+}
+
 .news-body .table > :not(caption) > * > * {
   vertical-align: top;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .text-left {
@@ -9398,6 +9425,170 @@ button {
   }
   .gap-xxxl-5 {
     gap: 3rem !important;
+  }
+}
+.row-gap-0 {
+  row-gap: 0 !important;
+}
+
+.row-gap-1 {
+  row-gap: 0.25rem !important;
+}
+
+.row-gap-2 {
+  row-gap: 0.5rem !important;
+}
+
+.row-gap-3 {
+  row-gap: 1rem !important;
+}
+
+.row-gap-4 {
+  row-gap: 1.5rem !important;
+}
+
+.row-gap-5 {
+  row-gap: 3rem !important;
+}
+
+@media screen and (min-width: 480px) {
+  .row-gap-xs-0 {
+    row-gap: 0 !important;
+  }
+  .row-gap-xs-1 {
+    row-gap: 0.25rem !important;
+  }
+  .row-gap-xs-2 {
+    row-gap: 0.5rem !important;
+  }
+  .row-gap-xs-3 {
+    row-gap: 1rem !important;
+  }
+  .row-gap-xs-4 {
+    row-gap: 1.5rem !important;
+  }
+  .row-gap-xs-5 {
+    row-gap: 3rem !important;
+  }
+}
+@media screen and (min-width: 576px) {
+  .row-gap-sm-0 {
+    row-gap: 0 !important;
+  }
+  .row-gap-sm-1 {
+    row-gap: 0.25rem !important;
+  }
+  .row-gap-sm-2 {
+    row-gap: 0.5rem !important;
+  }
+  .row-gap-sm-3 {
+    row-gap: 1rem !important;
+  }
+  .row-gap-sm-4 {
+    row-gap: 1.5rem !important;
+  }
+  .row-gap-sm-5 {
+    row-gap: 3rem !important;
+  }
+}
+@media screen and (min-width: 768px) {
+  .row-gap-md-0 {
+    row-gap: 0 !important;
+  }
+  .row-gap-md-1 {
+    row-gap: 0.25rem !important;
+  }
+  .row-gap-md-2 {
+    row-gap: 0.5rem !important;
+  }
+  .row-gap-md-3 {
+    row-gap: 1rem !important;
+  }
+  .row-gap-md-4 {
+    row-gap: 1.5rem !important;
+  }
+  .row-gap-md-5 {
+    row-gap: 3rem !important;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .row-gap-lg-0 {
+    row-gap: 0 !important;
+  }
+  .row-gap-lg-1 {
+    row-gap: 0.25rem !important;
+  }
+  .row-gap-lg-2 {
+    row-gap: 0.5rem !important;
+  }
+  .row-gap-lg-3 {
+    row-gap: 1rem !important;
+  }
+  .row-gap-lg-4 {
+    row-gap: 1.5rem !important;
+  }
+  .row-gap-lg-5 {
+    row-gap: 3rem !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .row-gap-xl-0 {
+    row-gap: 0 !important;
+  }
+  .row-gap-xl-1 {
+    row-gap: 0.25rem !important;
+  }
+  .row-gap-xl-2 {
+    row-gap: 0.5rem !important;
+  }
+  .row-gap-xl-3 {
+    row-gap: 1rem !important;
+  }
+  .row-gap-xl-4 {
+    row-gap: 1.5rem !important;
+  }
+  .row-gap-xl-5 {
+    row-gap: 3rem !important;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .row-gap-xxl-0 {
+    row-gap: 0 !important;
+  }
+  .row-gap-xxl-1 {
+    row-gap: 0.25rem !important;
+  }
+  .row-gap-xxl-2 {
+    row-gap: 0.5rem !important;
+  }
+  .row-gap-xxl-3 {
+    row-gap: 1rem !important;
+  }
+  .row-gap-xxl-4 {
+    row-gap: 1.5rem !important;
+  }
+  .row-gap-xxl-5 {
+    row-gap: 3rem !important;
+  }
+}
+@media screen and (min-width: 1600px) {
+  .row-gap-xxxl-0 {
+    row-gap: 0 !important;
+  }
+  .row-gap-xxxl-1 {
+    row-gap: 0.25rem !important;
+  }
+  .row-gap-xxxl-2 {
+    row-gap: 0.5rem !important;
+  }
+  .row-gap-xxxl-3 {
+    row-gap: 1rem !important;
+  }
+  .row-gap-xxxl-4 {
+    row-gap: 1.5rem !important;
+  }
+  .row-gap-xxxl-5 {
+    row-gap: 3rem !important;
   }
 }
 .justify-content-start {
@@ -12870,31 +13061,86 @@ button {
   display: none;
 }
 
-.joint_supply_contract_bg {
-  background-image: url(../images/joint_supply_contract/joint_supply_contract_bg.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+.contract_bg {
+  top: -196px;
+  left: -411px;
 }
 
-.joint_supply_contract_table > .tr {
+.contract-content {
+  margin-bottom: 60px;
+}
+.contract-content > .tr {
   display: grid;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
   grid-template-columns: 160px 1fr;
-  row-gap: 16px;
 }
-.joint_supply_contract_table > .tr > .th, .joint_supply_contract_table > .tr > .td {
-  font-weight: var(--bolder);
-  line-height: 28px;
-  padding: 4px;
+@media (min-width: 1024px) {
+  .contract-content > .tr {
+    grid-template-columns: 160px 1fr 160px 1fr;
+  }
 }
-.joint_supply_contract_table > .tr > .th {
+.contract-content > .tr:first-child {
+  border-bottom: 1px solid var(--white);
+}
+.contract-content > .tr > * {
+  padding: 8px;
+}
+.contract-content > .tr .th {
   color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: var(--bolder);
+  line-height: 1.5rem;
+  text-align: center;
+  border-bottom: 1px solid var(--white);
+}
+@media (min-width: 1024px) {
+  .contract-content > .tr .th {
+    border-bottom: 0;
+  }
+}
+.contract-content > .tr .td {
+  font-size: 1rem;
+  font-weight: var(--bolder);
+  line-height: 1.75rem;
+  border-bottom: 1px solid var(--white);
+}
+@media (min-width: 1024px) {
+  .contract-content > .tr .td {
+    border-bottom: 0;
+  }
+}
+
+.contract-table {
+  width: 720px;
+}
+.contract-table > :not(caption) > * > * {
   text-align: center;
 }
-.joint_supply_contract_table > .tr > .td {
-  font-size: 1rem;
+.contract-table > thead > tr > th {
+  color: var(--primary);
+  font-size: 0.875rem;
+  font-weight: var(--bolder);
+  line-height: 1.5rem;
+  border-bottom-width: 1px;
+  border-color: var(--white);
+  white-space: nowrap;
 }
-.joint_supply_contract_table > .tr:not(:last-child) {
-  border-bottom: 1px solid var(--white);
+.contract-table > tbody > tr:not(:last-child) > td {
+  border-bottom-width: 1px;
+  border-color: var(--white);
+}
+@media (min-width: 768px) {
+  .contract-table {
+    width: 100%;
+  }
+}
+
+.contract-download {
+  text-align: center;
+  margin-top: 60px;
 }
 
 @media (max-width: 481px) {
@@ -13001,6 +13247,7 @@ button {
   margin-bottom: 60px;
 }
 .select-group .select {
+  background-color: rgba(255, 255, 255, 0.8);
   position: relative;
   padding-top: 3px;
   padding-left: 12px;

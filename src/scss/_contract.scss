@@ -1,0 +1,71 @@
+.contract_bg {
+    top: -196px;
+    left: -411px;
+}
+.contract-content {
+    margin-bottom: 60px;
+    > .tr {
+        display: grid;
+        align-items: center;
+        grid-template-columns: 160px 1fr;
+        @include media-breakpoint-up(lg) {
+            grid-template-columns: 160px 1fr 160px 1fr;
+        }
+        &:first-child {
+            border-bottom: 1px solid var(--white);
+        }
+        > * {
+            padding: 8px;
+        }
+        .th {
+            color: var(--primary);
+            font-size: toRem(14px);
+            font-weight: var(--bolder);
+            line-height: toRem(24px);
+            text-align: center;
+            border-bottom: 1px solid var(--white);
+            @include media-breakpoint-up(lg) {
+                border-bottom: 0;
+            }
+        }
+        .td {
+            font-size: toRem(16px);
+            font-weight: var(--bolder);
+            line-height: toRem(28px);
+            border-bottom: 1px solid var(--white);
+            @include media-breakpoint-up(lg) {
+                border-bottom: 0;
+            }
+        }
+    }
+}
+.contract-table {
+    width: map-get($container-max-widths, md);
+    > :not(caption) > * > * {
+        text-align: center;
+    }
+    > thead > tr > th{
+        color: var(--primary);
+        font-size: toRem(14px);
+        font-weight: var(--bolder);
+        line-height: toRem(24px);
+        border-bottom-width: 1px;
+        border-color: var(--white);
+        white-space: nowrap;
+    }
+    > tbody > tr {
+        &:not(:last-child) {
+            > td {
+                border-bottom-width: 1px;
+                border-color: var(--white);
+            }
+        }
+    }
+    @include media-breakpoint-up(md) {
+        width: 100%;
+    }
+}
+.contract-download {
+    text-align: center;
+    margin-top: 60px;
+}

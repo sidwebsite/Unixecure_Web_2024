@@ -40,3 +40,7 @@ section {
 a {
     display: inline-block;
 }
+table {
+    caption-side: bottom;
+    border-collapse: collapse;
+}

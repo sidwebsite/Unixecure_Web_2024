@@ -12,6 +12,7 @@ module.exports = {
         index: './src/js/index.js',
         aboutUs_recruit: './src/js/aboutUs_recruit.js',
         represent_lists: './src/js/represent_lists.js',
+        selcets: './src/js/selcets.js',
         news: './src/js/news.js',
         sticky: './src/js/sticky.js',
         pagination: './src/js/pagination.js'
@@ -206,10 +207,17 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
-        // 共同供應契約
+        // 共同供應契約 列表頁
         new HtmlWebpackPlugin({
-            template: './src/html/ch/joint_supply_contract.html',
-            filename: 'ch/joint_supply_contract.html',
+            template: './src/html/ch/contract_lists.html',
+            filename: 'ch/contract_lists.html',
+            minify: false,
+            chunks: ['main', 'selcets']
+        }),
+        // 共同供應契約 內頁
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contract_content.html',
+            filename: 'ch/contract_content.html',
             minify: false,
             chunks: ['main']
         }),

@@ -38,6 +38,12 @@ $utilities: (
         class: gap,
         values: $gutters
     ),
+    "row-gap": (
+        responsive: true,
+        property: row-gap,
+        class: row-gap,
+        values: $gutters
+    ),
     "justify-content": (
         responsive: true,
         property: justify-content,
