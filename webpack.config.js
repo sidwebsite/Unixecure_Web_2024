@@ -221,6 +221,96 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_1.html',
+            filename: 'ch/contracts/contract_page_1.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_2.html',
+            filename: 'ch/contracts/contract_page_2.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_3.html',
+            filename: 'ch/contracts/contract_page_3.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_4.html',
+            filename: 'ch/contracts/contract_page_4.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_5.html',
+            filename: 'ch/contracts/contract_page_5.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_6.html',
+            filename: 'ch/contracts/contract_page_6.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_7.html',
+            filename: 'ch/contracts/contract_page_7.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_8.html',
+            filename: 'ch/contracts/contract_page_8.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_9.html',
+            filename: 'ch/contracts/contract_page_9.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_10.html',
+            filename: 'ch/contracts/contract_page_10.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_11.html',
+            filename: 'ch/contracts/contract_page_11.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_12.html',
+            filename: 'ch/contracts/contract_page_12.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_13.html',
+            filename: 'ch/contracts/contract_page_13.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_14.html',
+            filename: 'ch/contracts/contract_page_14.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/contracts/contract_page_15.html',
+            filename: 'ch/contracts/contract_page_15.html',
+            minify: false,
+            chunks: ['main']
+        }),
         // 代理商品-首頁
         new HtmlWebpackPlugin({
             template: './src/html/ch/represent_index.html',

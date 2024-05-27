@@ -27,10 +27,15 @@
     overflow: hidden;
 }
 .cookies-box {
-    padding: 10px 40px ;
-    > button {
+    background-color: rgba($blue-50, 0.95);
+    padding: 10px 40px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    .consentButton {
         padding: 4px 16px;
-        margin-left: 40px;
+        font-size: toRem(14px);
+        line-height: toRem(24px);
     }
 }
 .hr {

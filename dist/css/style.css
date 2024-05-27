@@ -13132,6 +13132,12 @@ tbody, td, tfoot, th, thead, tr {
   border-bottom-width: 1px;
   border-color: var(--white);
 }
+.contract-table > tbody > tr > td {
+  padding: 0.75rem 0.75rem;
+}
+.contract-table > tbody > tr > td:not(:nth-child(4)) {
+  white-space: nowrap;
+}
 @media (min-width: 768px) {
   .contract-table {
     width: 100%;
@@ -13910,11 +13916,16 @@ h4.cases-title {
 }
 
 .cookies-box {
+  background-color: rgba(235, 237, 249, 0.95);
   padding: 10px 40px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
 }
-.cookies-box > button {
+.cookies-box .consentButton {
   padding: 4px 16px;
-  margin-left: 40px;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
 }
 
 .hr {
