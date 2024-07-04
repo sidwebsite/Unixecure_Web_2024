@@ -464,6 +464,26 @@ module.exports = {
             minify: false,
             chunks: ['main']
         }),
+        // 代理商品-claroty 列表頁
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_claroty_lists.html',
+            filename: 'ch/represent_claroty_lists.html',
+            minify: false,
+            chunks: ['main', 'represent_lists']
+        }),
+        // 代理商品-claroty 內容頁
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_claroty_content_1.html',
+            filename: 'ch/represent_claroty_content_1.html',
+            minify: false,
+            chunks: ['main']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/represent_claroty_content_2.html',
+            filename: 'ch/represent_claroty_content_2.html',
+            minify: false,
+            chunks: ['main']
+        }),
         // 最新消息：成功案例
         new HtmlWebpackPlugin({
             template: './src/html/ch/cases_lists.html',

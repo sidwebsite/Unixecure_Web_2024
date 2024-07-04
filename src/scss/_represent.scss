@@ -85,3 +85,74 @@
 .hide {
     display: none;
 }
+.claroty-table {
+    > .tr {
+        padding: 16px 0;
+        &:first-child {
+            display: none;
+        }
+        display: block;
+        grid-template-columns: 160px 1fr 160px;
+        gap: 16px;
+        align-items: center;
+        border-bottom: 1px solid var(--gray-200);
+        > .th {
+            color: var(--primary);
+            font-weight: var(--bolder);
+            padding: {
+                top: 16px;
+                bottom: 16px;
+            };
+            text-align: center;
+        }
+        > .td {
+            padding: 0;
+            font-size: toRem(12px);
+            line-height: 18px;
+            &:nth-child(2) {
+                font-size: toRem(8px);
+                line-height: 12px;
+            }
+        }
+    }
+    @include media-breakpoint-up(lg) {
+        > .tr {
+            display: grid;
+            padding: 0;
+            &:first-child {
+                display: grid;
+            }
+            > .th {
+                display: block;
+            }
+            > .td {
+                padding: {
+                    top: 16px;
+                    bottom: 16px;
+                };
+            }
+        }
+    }
+}
+.claorty-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    align-items: center;
+    .column-merge {
+        grid-column: 2 / span 5;
+    }
+    .item {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: toRem(12px);
+        line-height: 18px;
+        text-align: center;
+        padding: 8px;
+        height: 100%;
+    }
+    @include media-breakpoint-up(md) {
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

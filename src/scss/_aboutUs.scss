@@ -336,6 +336,7 @@
         a {
             font-size: toRem(16px);
             color: var(--gray-900);
+            line-height: 28px;
         }
         &:not(:last-child) {
             margin-bottom: 40px;
