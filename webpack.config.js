@@ -53,6 +53,10 @@ module.exports = {
                 type: 'asset/resource'
             },
             {
+                test: /\.(pdf)$/,
+                type: "asset/resource",
+            },
+            {
                 test: /\.(png|jpe?g|gif|webp|svg)$/i,
                 type: 'asset',
                 parser: {
