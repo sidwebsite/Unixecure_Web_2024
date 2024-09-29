@@ -740,6 +740,48 @@ module.exports = {
             minify: false,
             chunks: ['main', 'sticky']
         }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_31.html',
+            filename: 'ch/news/news_page_31.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_32.html',
+            filename: 'ch/news/news_page_32.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_33.html',
+            filename: 'ch/news/news_page_33.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_34.html',
+            filename: 'ch/news/news_page_34.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_35.html',
+            filename: 'ch/news/news_page_35.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_36.html',
+            filename: 'ch/news/news_page_36.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_37.html',
+            filename: 'ch/news/news_page_37.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
         // 最新消息：影音專區
         new HtmlWebpackPlugin({
             template: './src/html/ch/video_list.html',
@@ -867,6 +909,12 @@ module.exports = {
         new HtmlWebpackPlugin({
             template: './src/html/ch/events/events_page_8.html',
             filename: 'ch/events/events_page_8.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/events/events_page_9.html',
+            filename: 'ch/events/events_page_9.html',
             minify: false,
             chunks: ['main', 'sticky']
         }),

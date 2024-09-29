@@ -193,11 +193,11 @@
     .index-news-item {
         > a {
             color: var(--primary);
-            display: block;
             transition: var(--base-transition);
             text-decoration: none;
             font-size: toRem(16px);
             font-weight: var(--bolder);
+            width: 100%;
             &:hover {
                 color: var(--btn-hover);
             }

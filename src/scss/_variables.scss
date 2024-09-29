@@ -54,6 +54,8 @@ $warning: $orange;
 // news content colors
 $news-orange: #dd6f0a;
 $news-green: #6DB130;
+// Status/normal
+$status-blue: #187BF0;
 // colors
 $theme-colors: (
     "primary": $primary,
@@ -64,7 +66,8 @@ $theme-colors: (
 	"alarm": $alarm,
 	"lightgray": $lightgray,
 	"newsOrange": $news-orange,
-	"newsGreen": $news-green
+	"newsGreen": $news-green,
+	"statusBlue": $status-blue
 ) !default;
 // primary colors
 $colors: (

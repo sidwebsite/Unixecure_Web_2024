@@ -51,6 +51,7 @@
         > .card-group {
             list-style: none;
             display: flex;
+            flex-wrap: wrap;
             > li {
                 background-color: var(--gray-100);
                 color: var(--primary-600);
