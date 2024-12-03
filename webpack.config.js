@@ -782,6 +782,30 @@ module.exports = {
             minify: false,
             chunks: ['main', 'sticky']
         }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_38.html',
+            filename: 'ch/news/news_page_38.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_39.html',
+            filename: 'ch/news/news_page_39.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_40.html',
+            filename: 'ch/news/news_page_40.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_41.html',
+            filename: 'ch/news/news_page_41.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
         // 最新消息：影音專區
         new HtmlWebpackPlugin({
             template: './src/html/ch/video_list.html',
