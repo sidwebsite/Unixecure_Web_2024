@@ -806,6 +806,18 @@ module.exports = {
             minify: false,
             chunks: ['main', 'sticky']
         }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_42.html',
+            filename: 'ch/news/news_page_42.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
+        new HtmlWebpackPlugin({
+            template: './src/html/ch/news/news_page_43.html',
+            filename: 'ch/news/news_page_43.html',
+            minify: false,
+            chunks: ['main', 'sticky']
+        }),
         // 最新消息：影音專區
         new HtmlWebpackPlugin({
             template: './src/html/ch/video_list.html',
